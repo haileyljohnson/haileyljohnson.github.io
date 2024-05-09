@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * Ph.D in Computer Science, University of Wisconsin-Madison, current
-* B.S. in Computer Engineering, University of Idaho, 2012
+* B.S. in Computer Engineering, University of Idaho, 2019
 
 Research experience
 ======
