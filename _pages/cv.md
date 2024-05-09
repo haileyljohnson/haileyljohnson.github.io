@@ -94,6 +94,14 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
+
+Service and leadership
+======
+* Lead People and Robots Lab Mentorship Program
+    * Summer 2023 - current
+* Volunteer at Gigi's Playhouse Madison
+    * Summer 2022 -  current
+
 <!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
@@ -105,10 +113,3 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul> -->
-
-Service and leadership
-======
-* Lead People and Robots Lab Mentorship Program
-    * Summer 2023 - current
-* Volunteer at Gigi's Playhouse Madison
-    * Summer 2022 -  current
