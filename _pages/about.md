@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. Student at the University of Wisconsin-Madison advised by [Dr. Bilge Mutlu](http://bilgemutlu.com/) in the [People and Robots Lab](https://peopleandrobots.wisc.edu/). I was awarded the NSF Graduate Research Fellowship in 2023 to work on the design and development for supportive technologies for adults with Down syndrome.
+I am a Ph.D. Student at the University of Wisconsin-Madison advised by [Dr. Bilge Mutlu](http://bilgemutlu.com/) in the [People and Robots Lab](https://peopleandrobots.wisc.edu/). I was awarded the NSF Graduate Research Fellowship in 2023 to work on the design and development for supportive technologies for adults with Down syndrome. I am interested in augmented reality (AR) and tangible interfaces.
 
 I work alongside amazing researchers and students that have helped me so much on my Ph.D. journey:
 
