@@ -16,6 +16,7 @@ I work alongside amazing researchers and students that have helped me so much on
 * Heidi Spalitta : Undergraduate mentee
 * Callie Kim : Graduate student collaborator
 
+Please feel free to contact me if you have any questions about my work!
 
 
 
