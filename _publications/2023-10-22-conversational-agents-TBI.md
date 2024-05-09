@@ -6,7 +6,7 @@ excerpt: 'In this study, we gave nine adults with TBI an at-home conversation ag
 date: 2023-10-22
 venue: 'Proceedings of the 25th International ACM SIGACCESS Conference on Computers and Accessibility'
 paperurl: 'https://dl.acm.org/doi/abs/10.1145/3597638.3608385'
-citation: 'Hu, Yaxin, et al. &quot;Investigating Day-to-day Experiences with Conversational Agents by Users with Traumatic Brain Injury.&quot; <i>Proceedings of the 25th International ACM SIGACCESS Conference on Computers and Accessibility<i>. 2023.'
+citation: 'Hu, Yaxin, et al. &quot;Investigating Day-to-day Experiences with Conversational Agents by Users with Traumatic Brain Injury.&quot; <i>Proceedings of the 25th International ACM SIGACCESS Conference on Computers and Accessibility</i>. 2023.'
 
 
 ---
