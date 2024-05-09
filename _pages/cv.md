@@ -90,17 +90,15 @@ Grants and Awards
 
 Publications
 ======
-    <ul>{% for post in site.publications reversed %}
-        {% include archive-single-cv.html %}
-    {% endfor %}</ul>
+<ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+{% endfor %}</ul>
 
 
 Service and leadership
 ======
-* Lead People and Robots Lab Mentorship Program
-    * Summer 2023 - current
-* Volunteer at Gigi's Playhouse Madison
-    * Summer 2022 -  current
+* Lead People and Robots Lab Mentorship Program: Summer 2023 - current
+* Volunteer at Gigi's Playhouse Madison: Summer 2022 -  current
 
 <!-- Talks
 ======
