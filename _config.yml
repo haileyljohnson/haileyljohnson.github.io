@@ -35,7 +35,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=tfsaaJ0AAAAJ&hl=en&authuser=1"
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0003-1310-9948"
-  pubmed           : ""
+  pubmed           : # none
   researchgate     : # URL
 
   # Repositories and software development
