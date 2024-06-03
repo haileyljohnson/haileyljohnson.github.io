@@ -3,10 +3,10 @@ title: "``It Is Easy Using My Apps:'' Understanding Technology Use and Needs of 
 collection: publications
 permalink: /publication/2024-5-10-it-is-easy-using-my-apps
 excerpt: 'In this work, we interviewed six adults with DS, seven parents of adults with DS, and three experts in speech-language pathology, special education, and occupational therapy to determine how technology could support adults with DS.'
-date: 2024-05-10
+date: 2024-05
 venue: 'CHI 2024'
-paperurl: 'https://arxiv.org/abs/2403.16311'
-citation: 'Johnson, Hailey L., Audra Sterling, and Bilge Mutlu. &quot;&quot;It Is Easy Using My Apps:&quot; Understanding Technology Use and Needs of Adults with Down Syndrome.&quot; arXiv preprint arXiv:2403.16311 (2024).'
+paperurl: 'https://doi.org/10.1145/3613904.3642950'
+citation: 'Johnson, Hailey Lynn, Audra Sterling, and Bilge Mutlu. &quot;&quot; It Is Easy Using My Apps:&quot; Understanding Technology Use and Needs of Adults with Down Syndrome.&quot; Proceedings of the CHI Conference on Human Factors in Computing Systems. 2024.'
 
 
 ---
