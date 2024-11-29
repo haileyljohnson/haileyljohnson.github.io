@@ -7,14 +7,34 @@ redirect_from:
   - /about.html
 ---
 
-I am a Computer Science Ph.D. Student at the University of Wisconsin-Madison advised by [Dr. Bilge Mutlu](http://bilgemutlu.com/) in the [People and Robots Lab](https://peopleandrobots.wisc.edu/). I was awarded the NSF Graduate Research Fellowship in 2023 to work on the design and development for supportive technologies for adults with Down syndrome. I am interested in assistive and accessible technologies, augmented reality (AR), and tangible interfaces.
+I am a Computer Science Ph.D. Student at the University of Wisconsin-Madison advised by [Dr. Bilge Mutlu](http://bilgemutlu.com/) in the [People and Robots Lab](https://peopleandrobots.wisc.edu/). My research focuses on designing and developing supportive technologies for adults with Down syndrome (DS), emphasizing assistive and accessible technologies, augmented reality (AR), and tangible interfaces. In 2023, I was honored to receive the NSF Graduate Research Fellowship to support this work.
 
-I work alongside amazing researchers and students that have helped me so much on my Ph.D. journey:
+## My Research Journey
+I am committed to creating inclusive, accessible technologies that enable adults with DS to achieve their personal and occupational goals. My research is guided by a collaborative, user-centered approach that includes building connections with the DS community, engaging in co-design studies, and conducting user studies of technology solutions. Through this process, I strive to bridge the gap between technological innovation and the lived experiences of adults with DS.
+
+Highlights of my work include:
+
+* Conducting qualitative interview studies with adults with DS, their parents, and experts to explore how technology is currently used within thier daily lives and identify opportunities for technology support.
+* Completing a systematic literature review to uncover gaps in existing research and inform the design of future assistive technologies.
+* Developing and deploying a large-scale technology use survey to better understand the current tools, preferences, and needs of adults with DS.
+* Leading co-design studies to prototype and refine innovative systems that integrate AR, gamification, and tangible interfaces.
+
+My goal is to ensure that every project centers the voices of adults with DS, designing technologies that are not only functional but also empowering and meaningful.
+
+## The Team Around Me
+
+I am fortunate to work alongside incredible collaborators, mentors, and students who enrich my research and inspire me every day:
 
 * Dr. Bilge Mutlu: Advisor
 * Dr. Audra Sterling: Collaborator
 * Heidi Spalitta : Undergraduate mentee
 * Callie Kim : Graduate student collaborator
+
+I believe that collaboration is at the heart of impactful research. These individuals have directly shaped my Ph.D. journey, and I am grateful for their expertise and support.
+
+## Future Vision
+
+My long-term aspiration is to become a professor of Computer Science, focusing on accessibility for individuals with cognitive disabilities. I hope to establish a research program that bridges academia and the community, with graduate students volunteering alongside local organizations to foster meaningful connections. My vision extends beyond academia—I aim to contribute to evolving accessibility guidelines for industry and government, ensuring technology is inclusive for everyone.
 
 Please feel free to contact me if you have any questions about my work!
 
