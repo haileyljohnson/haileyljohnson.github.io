@@ -1,0 +1,6 @@
+/* Change the background color behind the author profile */
+.author-profile {
+    background-color: #ADD2C2; /* Replace with your desired color */
+    padding: 20px;            /* Optional: Add padding for spacing */
+    border-radius: 5px;       /* Optional: Add rounded corners */
+}
