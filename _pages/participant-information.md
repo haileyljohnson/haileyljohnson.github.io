@@ -7,15 +7,16 @@ redirect_from:
   - /participant
 ---
 
-# Participant Information
-
 ## Online National Qualtrics Technology Use Survey
-[Download the Survey PDF](/recruitmentPDFs/Survey_Flyer.pdf)
+[Download the Survey Recruitment Flyer](/recruitmentPDFs/Survey_Flyer.pdf)
+<embed src="/recruitmentPDFs/Survey_Flyer.pdf" type="application/pdf" width="100%">
 
 ## Technology Interaction Co-design Study
-[Download the Co-Design Study PDF](/recruitmentPDFs/Co_Design_Flyer.pdf)
+[Download the Co-Design Study Recruitment Flyer](/recruitmentPDFs/Co_Design_Flyer.pdf)
+<embed src="/recruitmentPDFs/Co_Design_Flyer.pdf" type="application/pdf" width="100%">
 
 ## Privacy and Security Notification Exploratory Study
-[Download the Privacy Study PDF](/recruitmentPDFs/S_P_Flyer.pdf)
+[Download the Privacy Study Recruitment Flyer](/recruitmentPDFs/S_P_Flyer.pdf)
+<embed src="/recruitmentPDFs/S_P_Flyer.pdf" type="application/pdf" width="100%">
 
 

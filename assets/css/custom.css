@@ -1,6 +1,10 @@
 /* Change the background color behind the author profile */
-.author-profile {
-    background-color: #ADD2C2; /* Replace with your desired color */
-    padding: 20px;            /* Optional: Add padding for spacing */
-    border-radius: 5px;       /* Optional: Add rounded corners */
+.masthead {
+    background-color: #007EA7; /* Replace with your desired color */
+    color: #FFFFFF  !important; /* Example: Set text color */
+    height: 90px;
+}
+.masthead * {
+    background-color: #007EA7; /* Replace with your desired color */
+    color: #FFFFFF  !important; /* Example: Set text color */
 }
