@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Computer Science Ph.D. Student at the University of Wisconsin-Madison advised by [Dr. Bilge Mutlu](http://bilgemutlu.com/) in the [People and Robots Lab](https://peopleandrobots.wisc.edu/). My research focuses on designing and developing supportive technologies for adults with Down syndrome (DS), emphasizing assistive and accessible technologies, augmented reality (AR), and tangible interfaces. In 2023, I was honored to receive the NSF Graduate Research Fellowship to support this work.
+I am a Computer Science Ph.D. Student at the University of Wisconsin-Madison advised by [Dr. Bilge Mutlu](http://bilgemutlu.com/) in the [People and Robots Lab](https://peopleandrobots.wisc.edu/). My research focuses on designing and developing supportive technologies for adults with Down syndrome (DS), emphasizing assistive and accessible technologies, augmented reality (AR), and tangible interfaces. In 2023, I was honored to receive the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/) to support this work.
 
 ## My Research Journey
 I am committed to creating inclusive, accessible technologies that enable adults with DS to achieve their personal and occupational goals. My research is guided by a collaborative, user-centered approach that includes building connections with the DS community, engaging in co-design studies, and conducting user studies of technology solutions. Through this process, I strive to bridge the gap between technological innovation and the lived experiences of adults with DS.
