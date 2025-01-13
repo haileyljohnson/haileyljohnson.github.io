@@ -26,7 +26,7 @@ My goal is to ensure that every project centers the voices of adults with DS, de
 I am fortunate to work alongside incredible collaborators, mentors, and students who enrich my research and inspire me every day:
 
 * Dr. Bilge Mutlu: Advisor
-* Dr. Audra Sterling: Collaborator
+* Dr. Audra Sterling: Professor in Communication Sciences and Disorders and Waisman Center Collaborator
 * Heidi Spalitta : Undergraduate mentee
 * Callie Kim : Graduate student collaborator
 
