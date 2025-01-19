@@ -82,6 +82,7 @@ Work experience
 
 Grants and Awards
 ======
+* ACM ASSETS 2024 Doctoral Consortium: October 2024
 * National Science Foundation Graduate Research Fellowship Program: April 2023
 * University of Wisconsin-Madison Fall Competition Grant: December 2023
 * Outstanding Senior, University of Idaho Department of Electrical and Computer Engineering: May 2019
