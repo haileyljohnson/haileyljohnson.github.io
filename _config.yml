@@ -147,6 +147,9 @@ include:
   - _pages
   - files
   - assets/css/custom.css
+  - _portfolio/portfolio-2.md
+  - _portfolio/portfolio-4.md
+  - _portfolio/portfolio-5.md
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
