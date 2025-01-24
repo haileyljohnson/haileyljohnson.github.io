@@ -1,6 +1,6 @@
 ---
 title: "Co-design Technology Interactions with Adults with Down syndrome"
-excerpt: "<br/><img src='/images/SurveyStateMachine.png'>"
+excerpt: "<br/><img src='/images/CodesignFig.png'>"
 collection: portfolio
 ---
 
