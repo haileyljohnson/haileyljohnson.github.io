@@ -16,7 +16,7 @@ redirect_from:
 <embed src="/recruitmentPDFs/Co_Design_Flyer.pdf" type="application/pdf" width="100%">
 
 ## Privacy and Security Notification Exploratory Study
-[Download the Privacy Study Recruitment Flyer](/recruitmentPDFs/S_P_Flyer.pdf)
-<embed src="/recruitmentPDFs/S_P_Flyer.pdf" type="application/pdf" width="100%">
+[Download the Privacy Study Recruitment Flyer](/recruitmentPDFs/S_P_Flyer2.pdf)
+<embed src="/recruitmentPDFs/S_P_Flyer2.pdf" type="application/pdf" width="100%">
 
 
