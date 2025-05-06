@@ -9,6 +9,7 @@ redirect_from:
 
 I am a Computer Science Ph.D. Student at the University of Wisconsin-Madison advised by [Dr. Bilge Mutlu](http://bilgemutlu.com/) in the [People and Robots Lab](https://peopleandrobots.wisc.edu/). My research focuses on designing and developing supportive technologies for adults with Down syndrome (DS), emphasizing assistive and accessible technologies, augmented reality (AR), and tangible interfaces. In 2023, I was honored to receive the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/) to support this work.
 
+
 ## My Research Journey
 I am committed to creating inclusive, accessible technologies that enable adults with DS to achieve their personal and occupational goals. My research is guided by a collaborative, user-centered approach that includes building connections with the DS community, engaging in co-design studies, and conducting user studies of technology solutions. Through this process, I strive to bridge the gap between technological innovation and the lived experiences of adults with DS.
 
@@ -21,14 +22,20 @@ Highlights of my work include:
 
 My goal is to ensure that every project centers the voices of adults with DS, designing technologies that are not only functional but also empowering and meaningful.
 
+<iframe
+  src="https://www.cs.wisc.edu/2025/04/15/hailey-johnson-phd-research-adults-down-syndrome/"
+  style="width:100%; height:500px;"
+></iframe>
+
 ## The Team Around Me
 
 I am fortunate to work alongside incredible collaborators, mentors, and students who enrich my research and inspire me every day:
 
 * Dr. Bilge Mutlu: Advisor
 * Dr. Audra Sterling: Professor in Communication Sciences and Disorders and Waisman Center Collaborator
-* Heidi Spalitta : Undergraduate mentee
-* Callie Kim : Graduate student collaborator
+* Heidi Spalitta: Undergraduate mentee
+* Yuna Shin: Undergraduate mentee
+* Callie Kim: Graduate student collaborator
 
 I believe that collaboration is at the heart of impactful research. These individuals have directly shaped my Ph.D. journey, and I am grateful for their expertise and support.
 
@@ -37,6 +44,8 @@ I believe that collaboration is at the heart of impactful research. These indivi
 My long-term aspiration is to become a professor of Computer Science, focusing on accessibility for individuals with cognitive disabilities. I hope to establish a research program that bridges academia and the community, with graduate students volunteering alongside local organizations to foster meaningful connections. My vision extends beyond academia—I aim to contribute to evolving accessibility guidelines for industry and government, ensuring technology is inclusive for everyone.
 
 Please feel free to contact me if you have any questions about my work!
+
+
 
 
 
