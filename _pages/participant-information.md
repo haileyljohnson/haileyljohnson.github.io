@@ -14,7 +14,7 @@ redirect_from:
 
 ## Privacy and Security Notification Exploratory Study
 [Download the Privacy Study Recruitment Flyer](/recruitmentPDFs/S_P_Flyer3.pdf)
-<embed src="/recruitmentPDFs/S_P_Flyer2.pdf" type="application/pdf" width="100%">
+<embed src="/recruitmentPDFs/S_P_Flyer3.pdf" type="application/pdf" width="100%">
 
 ## Online National Qualtrics Technology Use Survey COMPLETE
 [Download the Survey Recruitment Flyer](/recruitmentPDFs/Survey_Flyer.pdf)
