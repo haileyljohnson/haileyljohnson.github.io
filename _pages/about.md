@@ -16,9 +16,10 @@ I am committed to creating inclusive, accessible technologies that enable adults
 Highlights of my work include:
 
 * Conducting qualitative interview studies with adults with DS, their parents, and experts to explore how technology is currently used within thier daily lives and identify opportunities for technology support.
-* Completing a systematic literature review to uncover gaps in existing research and inform the design of future assistive technologies.
+* Completing a systematic scoping literature review to uncover gaps in existing research and inform the design of future assistive technologies.
 * Developing and deploying a large-scale technology use survey to better understand the current tools, preferences, and needs of adults with DS.
 * Leading co-design studies to prototype and refine innovative systems that integrate AR, gamification, and tangible interfaces.
+* Assessing computer security and privacy notifications to develop more accessible systems for adults with Intellectual and Developmental Disabilities (IDD)
 
 My goal is to ensure that every project centers the voices of adults with DS, designing technologies that are not only functional but also empowering and meaningful.
 
@@ -31,11 +32,15 @@ My goal is to ensure that every project centers the voices of adults with DS, de
 
 I am fortunate to work alongside incredible collaborators, mentors, and students who enrich my research and inspire me every day:
 
-* Dr. Bilge Mutlu: Advisor
-* Dr. Audra Sterling: Professor in Communication Sciences and Disorders and Waisman Center Collaborator
+* [Dr. Bilge Mutlu](http://bilgemutlu.com/): Advisor, Professor in Computer Sciences
+* [Dr. Audra Sterling](https://csd.wisc.edu/staff/sterling-audra/): Professor in Communication Sciences and Disorders and Waisman Center, collaborator, and committee member
+* [Dr. Rahul Chatterjee](https://pages.cs.wisc.edu/~chatterjee/): Professor in Computer Sciences, collaborator, and committee memeber
+* [Dr. Yuhang Zhoa](https://www.yuhangz.com/): Professor in Computer Sciences, committee member
+* [Dr. Kevin Ponto](https://pages.discovery.wisc.edu/~kponto/): Professor in Design Studies Department in The School of Human Ecology and in Virtual Environments at the Wisconsin Institute for Discovery (WID), committee member
+* [Callie Kim](https://callie-kim.com/): Graduate student collaborator
+* [Julia Nonnenkamp](https://nonnenkamp.com/): Graduate student collaborator 
 * Heidi Spalitta: Undergraduate mentee
 * Yuna Shin: Undergraduate mentee
-* Callie Kim: Graduate student collaborator
 
 I believe that collaboration is at the heart of impactful research. These individuals have directly shaped my Ph.D. journey, and I am grateful for their expertise and support.
 
