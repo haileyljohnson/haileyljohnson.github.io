@@ -2,6 +2,7 @@
 title: "Conversational agents for people with Traumatic Brain Injury (TBI)"
 excerpt: "<br/><img src='/images/TBI-CA_Teaser.png'>"
 collection: portfolio
+order: 1
 ---
 
 # Completed

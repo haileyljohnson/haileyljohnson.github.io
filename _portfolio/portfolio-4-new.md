@@ -2,6 +2,7 @@
 title: "National Techology Usage Survey Study with Adults with Down syndrome"
 excerpt: "<br/><img src='/images/SurveyTeaserFig.png'>"
 collection: portfolio
+order: 4
 ---
 
 # In progress

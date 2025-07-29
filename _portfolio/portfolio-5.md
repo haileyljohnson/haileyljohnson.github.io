@@ -2,6 +2,7 @@
 title: "PRISMA Literature Review on Assistive Technologies with Adults with Down syndrome"
 excerpt: "<br/><img src='/images/RQModel.png'>"
 collection: portfolio
+order: 3
 ---
 
 # Completed

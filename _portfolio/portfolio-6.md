@@ -2,6 +2,7 @@
 title: "Privacy and Security Notification Design with Adults with Down syndrome"
 excerpt: "<br/><img src='/images/PandS.png'>"
 collection: portfolio
+order: 6
 ---
 
 # In progress

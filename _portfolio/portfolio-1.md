@@ -2,6 +2,7 @@
 title: "Exploratory Technology Study with Adults with Down Syndrome"
 excerpt: "<br/><img src='/images/TeaserFig.png'>"
 collection: portfolio
+order: 2
 ---
 
 # Completed
