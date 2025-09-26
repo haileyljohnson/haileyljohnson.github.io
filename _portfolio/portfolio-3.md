@@ -1,6 +1,6 @@
 ---
 title: "Supporting Money Management among Adults with Down Syndrome: A Multi-Technology Probe Study"
-excerpt: "<br/><img src='/images/CodesignFig.png'>"
+excerpt: "<br/><img src='/images/TechProbe.png'>"
 collection: portfolio
 order: 5
 ---
