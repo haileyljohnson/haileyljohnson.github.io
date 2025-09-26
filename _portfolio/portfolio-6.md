@@ -1,11 +1,11 @@
 ---
-title: "Privacy and Security Notification Design with Adults with Down syndrome"
-excerpt: "<br/><img src='/images/PandS.png'>"
+title: "\"I’m trying not to get hacked:\" How Adults with Intellectual and Developmental Disabilities Navigate Security and Privacy Notifications"
+excerpt: "<br/><img src='/images/SandP.png'>"
 collection: portfolio
 order: 6
 ---
 
 # In progress
-In today's digital age, security and privacy notifications are critical in protecting users. Yet, systems are not designed to accommodate individuals with cognitive differences, such as those with DS, which can limit their online access. These notifications, which guide users in managing data privacy and security risks, often require background knowledge, timed decisions, or full attention, which may be barriers for users with varying cognitive abilities. Drawing on inclusive security research, this project seeks to address the cognitive accessibility gaps in notification systems. We investigated two research questions: (1) How accessible are security and privacy notifications according to current accessibility design standards?; and (2) How do AwDS choose to interact with security and privacy notifications, and what are their experiences with online security and privacy? 
-To answer these questions, we evaluated 20 notification systems against web accessibility and universal design guidelines, identifying key gaps in the notification design and within the guidelines. We then conducted a user study with AwDS to explore their past experiences with online privacy and security and how they interpret and respond to notifications. The project aims to propose and evaluate solutions that make security and privacy notifications more accessible and empowering for users with cognitive disabilities.
+Security and privacy notifications---such as login alerts, spam e-mail warnings, and cookie consent requests---play a critical role in shaping how users respond to digital risks. Yet most notifications overlook cognitive accessibility, limiting their effectiveness for people with intellectual and developmental disabilities (IDD). In this work, we investigate how adults with IDD perceive and respond to common security and privacy notifications across mobile and web applications. Through a user study involving six adults with IDD, we identified key factors that influenced their understanding and decision-making, including reliance on visual or symbolic cues, simplification of complex terms, interdependence with support persons, and familiarity with everyday functions. 
+We further highlight interaction challenges, including misunderstandings of notification purpose and flow, misinterpretations of language and terminology, and misalignments of action-outcome expectations. Our results contribute design recommendations to advance usable privacy and security, supporting safer and more autonomous digital engagement for users with IDD.
 
