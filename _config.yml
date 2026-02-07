@@ -24,8 +24,8 @@ author:
   avatar           : "IMG_7228.jpg"
   name             : "Hailey L Johnson"
   pronouns         : "she/her"
-  bio              : "Ph.D. Student"
-  location         : "Madison, WI"
+  bio              : "Ph.D. Candidate"
+  #location         : "Madison, WI"
   employer         : "University of Wisconsin-Madison"
   uri              : # URL
   email            : "hljohnson22@wisc.edu"
