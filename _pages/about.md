@@ -63,13 +63,13 @@ Please feel free to contact me if you have any questions about my work!
     <p>Growing up in Washington made loving the outdoors feel inevitable. Hiking is one of my favorite ways to slow down and recharge, and I’m gradually checking national parks off my list, and I already have the next few planned.</p>
     <div class="fun-gallery">
       <img src="/images/hobbies/parks-volcanoes1.jpg" alt="Volcanoes National Park scenery">
-      <img src="/images/hobbies/parks-volcanoes2.jpg" alt="Volcanoes National Park scenery">
+      <img src="/images/hobbies/parks-volcanoes2.JPG" alt="Volcanoes National Park scenery">
       <img src="/images/hobbies/parks-mammothcave.jpeg" alt="Mammoth Cave landscape">
       <img src="/images/hobbies/parks-badlands.jpg" alt="Badlands landscape">
       <img src="/images/hobbies/parks-shenandoah.jpg" alt="Shenandoah view">
       <img src="/images/hobbies/parks-jordanvalley.jpg" alt="Jordan Valley Idaho scenery">
       <img src="/images/hobbies/parks-rocky.jpg" alt="Rocky Mountains scenery">
-      <img src="/images/hobbies/parks-acadia.jpg" alt="Acadia mountain scenery">
+      <img src="/images/hobbies/parks-acadia.JPG" alt="Acadia mountain scenery">
       <img src="/images/hobbies/parks-acadia2.jpg" alt="Acadia ocean scenery">
     </div>
   </div>
@@ -93,7 +93,7 @@ Please feel free to contact me if you have any questions about my work!
       <li>Breads</li>
     </ul>
     <div class="fun-gallery">
-      <img src="/images/hobbies/baking-rolls.jpg" alt="Cinnomon rolls before the oven">
+      <img src="/images/hobbies/baking-rolls.JPG" alt="Cinnomon rolls before the oven">
       <img src="/images/hobbies/baking-bread.jpg" alt="Homemade sourdough bread">
       <img src="/images/hobbies/baking-pie.jpg" alt="Apple pie">
     </div>
