@@ -40,7 +40,7 @@ I am fortunate to work alongside incredible collaborators, mentors, and students
 * [Julia Nonnenkamp](https://nonnenkamp.com/): Graduate student collaborator 
 * Heidi Spalitta: Undergraduate mentee + Graduate mentee
 * [Aishwarya Borse](www.linkedin.com/in/aishwarya-borse): Undergraduate mentee
-* [Vibhrav Jha](https://vibhrav.vercel.app): Undergraduate mentee
+* [Vibhrav Jha](https://www.linkedin.com/in/vibhrav-jha-4846a3275/): Undergraduate mentee
 * Harsh Singh: Undergraduate Mentee
 
 I believe that collaboration is at the heart of impactful research. These individuals have directly shaped my Ph.D. journey, and I am grateful for their expertise and support.
