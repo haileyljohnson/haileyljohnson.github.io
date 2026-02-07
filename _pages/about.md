@@ -38,20 +38,86 @@ I am fortunate to work alongside incredible collaborators, mentors, and students
 * [Dr. Kevin Ponto](https://pages.discovery.wisc.edu/~kponto/): Professor in Design Studies Department in The School of Human Ecology and in Virtual Environments at the Wisconsin Institute for Discovery (WID), committee member
 * [Callie Kim](https://callie-kim.com/): Graduate student collaborator
 * [Julia Nonnenkamp](https://nonnenkamp.com/): Graduate student collaborator 
-* Heidi Spalitta: Undergraduate mentee + Graduate mentee
+* [Heidi Spalitta](http://heidispalitta.github.io): Undergraduate mentee + Graduate mentee
 * [Aishwarya Borse](www.linkedin.com/in/aishwarya-borse): Undergraduate mentee
 * [Vibhrav Jha](https://www.linkedin.com/in/vibhrav-jha-4846a3275/): Undergraduate mentee
 * Harsh Singh: Undergraduate Mentee
 
 I believe that collaboration is at the heart of impactful research. These individuals have directly shaped my Ph.D. journey, and I am grateful for their expertise and support.
 
-## Future Vision
+## Future Career Vision
 
 My long-term aspiration is to become a professor of Computer Science, focusing on accessibility for individuals with cognitive disabilities. I hope to establish a research program that bridges academia and the community, with graduate students volunteering alongside local organizations to foster meaningful connections. My vision extends beyond academia—I aim to contribute to evolving accessibility guidelines for industry and government, ensuring technology is inclusive for everyone.
 
 Please feel free to contact me if you have any questions about my work!
 
 
+
+
+## Hobbies and Interests
+
+<div class="fun-grid">
+
+  <div class="fun-card fun-card-wide">
+    <h3>Hiking + National Parks</h3>
+    <p>Growing up in Washington made loving the outdoors feel inevitable. Hiking is one of my favorite ways to slow down and recharge, and I’m gradually checking national parks off my list, and I already have the next few planned.</p>
+    <div class="fun-gallery">
+      <img src="/images/hobbies/parks-volcanoes1.jpg" alt="Volcanoes National Park scenery">
+      <img src="/images/hobbies/parks-volcanoes2.jpg" alt="Volcanoes National Park scenery">
+      <img src="/images/hobbies/parks-mammothcave.jpeg" alt="Mammoth Cave landscape">
+      <img src="/images/hobbies/parks-badlands.jpg" alt="Badlands landscape">
+      <img src="/images/hobbies/parks-shenandoah.jpg" alt="Shenandoah view">
+      <img src="/images/hobbies/parks-jordanvalley.jpg" alt="Jordan Valley Idaho scenery">
+      <img src="/images/hobbies/parks-rocky.jpg" alt="Rocky Mountains scenery">
+      <img src="/images/hobbies/parks-acadia.jpg" alt="Acadia mountain scenery">
+      <img src="/images/hobbies/parks-acadia2.jpg" alt="Acadia ocean scenery">
+    </div>
+  </div>
+
+  <div class="fun-card">
+    <h3>Sewing</h3>
+    <p>I picked up sewing during COVID as a creative outlet, and it quickly became a favorite way to unwind. I love making practical pieces such as tote bags, quilts, dresses, pants, jackets, and shirts. Though my growing fabric stash suggests I MAYYYY be more optimistic than realistic about future projects.</p>
+    <div class="fun-gallery">
+      <img src="/images/hobbies/sewing-tote.jpg" alt="Handmade tote bag">
+      <img src="/images/hobbies/sewing-quilt.jpg" alt="Quilt detail">
+      <img src="/images/hobbies/sewing-frame.jpg" alt="Fabric covered frame">
+    </div>
+  </div>
+
+  <div class="fun-card">
+    <h3>Baking</h3>
+    <p>Baking has been part of my life for as long as I can remember. Taught by my mom, it remains one of my favorite ways to relax and connect with others.</p>
+    <ul class="fun-list">
+      <li>Cakes + Pies</li>
+      <li>Cookies + Candies</li>
+      <li>Breads</li>
+    </ul>
+    <div class="fun-gallery">
+      <img src="/images/hobbies/baking-rolls.jpg" alt="Cinnomon rolls before the oven">
+      <img src="/images/hobbies/baking-bread.jpg" alt="Homemade sourdough bread">
+      <img src="/images/hobbies/baking-pie.jpg" alt="Apple pie">
+    </div>
+  </div>
+
+  <div class="fun-card">
+    <h3>Reading</h3>
+    <p>I enjoy a mix of fantasy, magical realism, and classics, with a particular fondness for stories driven by strong characters and thoughtful reflections on identity, relationships, and meaning. A few favorites:</p>
+    <ul class="book-list">
+      <li><em>Gideon the Ninth</em></li>
+      <li><em>Mrs. Dalloway</em></li>
+      <li><em>The Ocean at the End of the Lane</em></li>
+      <li><em>The House in the Cerulean Sea</em></li>
+      <li><em>Tomorrow, and Tomorrow, and Tomorrow</em></li>
+      <li><em>Before the Coffee Gets Cold</em></li>
+      <li><em>Transcendent Kingdom</em></li>
+      <li><em>1984</em></li>
+      <li><em>The Alchemist</em></li>
+    </ul>
+  </div>
+
+  
+
+</div>
 
 
 
