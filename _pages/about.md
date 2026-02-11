@@ -39,7 +39,7 @@ I am fortunate to work alongside incredible collaborators, mentors, and students
 * [Callie Kim](https://callie-kim.com/): Graduate student collaborator
 * [Julia Nonnenkamp](https://nonnenkamp.com/): Graduate student collaborator 
 * [Heidi Spalitta](http://heidispalitta.github.io): Undergraduate mentee + Graduate mentee
-* [Aishwarya Borse](www.linkedin.com/in/aishwarya-borse): Undergraduate mentee
+* [Aishwarya Borse](https://www.linkedin.com/in/aishwarya-borse/): Undergraduate mentee
 * [Vibhrav Jha](https://www.linkedin.com/in/vibhrav-jha-4846a3275/): Undergraduate mentee
 * [Harsh Singh](www.linkedin.com/in/harsh-nk): Undergraduate Mentee
 
