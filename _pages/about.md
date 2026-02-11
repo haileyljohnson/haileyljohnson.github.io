@@ -47,7 +47,7 @@ I believe that collaboration is at the heart of impactful research. These indivi
 
 ## Future Career Vision
 
-My long-term aspiration is to become a professor of Computer Science, focusing on accessibility for individuals with cognitive disabilities. I hope to establish a research program that bridges academia and the community, with graduate students volunteering alongside local organizations to foster meaningful connections. My vision extends beyond academia—I aim to contribute to evolving accessibility guidelines for industry and government, ensuring technology is inclusive for everyone.
+My long-term aspiration is to become a professor of Computer Science, focusing on accessibility for individuals with cognitive disabilities. I hope to establish a research program that bridges academia and the community, with graduate students volunteering alongside local organizations to foster meaningful connections. My vision extends beyond academia. I aim to contribute to evolving accessibility guidelines for industry and government, ensuring technology is inclusive for everyone.
 
 Please feel free to contact me if you have any questions about my work!
 
