@@ -6,6 +6,7 @@
   <meta name="description" content="Conversational Agents for People with Traumatic Brain Injury — published at ASSETS 2023." />
   <title>Conversational Agents for TBI — Hailey L Johnson</title>
   <link rel="stylesheet" href="../style.css" />
+  <script>if(localStorage.getItem('lang-mode')==='simple')document.documentElement.classList.add('simple-mode');</script>
 </head>
 <body>
 
@@ -21,6 +22,10 @@
       <li><a href="../cv.html">CV</a></li>
       <li><a href="../participant-information.html">Participate</a></li>
     </ul>
+    <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle plain language mode">
+      <span class="lang-toggle-track"><span class="lang-toggle-thumb"></span></span>
+      <span class="lang-toggle-text">Plain Language</span>
+    </button>
   </nav>
 
   <main id="main-content">
@@ -59,7 +64,7 @@
       <section class="project-section reveal" aria-labelledby="abstract-heading">
         <h2 id="abstract-heading">Abstract</h2>
         <!-- TODO: Replace with the published ASSETS 2023 abstract -->
-        <p>Traumatic brain injury (TBI) can cause cognitive, communication,
+        <p><span class="lang-academic">Traumatic brain injury (TBI) can cause cognitive, communication,
 and psychological challenges that profoundly limit independence in
 everyday life. Conversational Agents (CAs) can provide individuals
 with TBI with cognitive and communication support, although little
@@ -71,7 +76,7 @@ CAs and accessibility challenges faced by TBI users. We also identifed 14 TBI-re
 We categorized those activities into four groups: mental health,
 cognitive activities, healthcare and rehabilitation, and routine activities. Design implications focus on accessibility improvements and
 functional designs of CAs that can better support the day-to-day
-needs of people with TBI.</p>
+needs of people with TBI.</span><span class="lang-simple">Brain injuries can affect memory, communication, and daily independence. Voice assistants — like Siri or Alexa — could help, but we didn't know much about how people with brain injuries actually use them. We gave nine adults with brain injuries a voice assistant to use at home for four weeks. We found that today's voice assistants often fall short of the accessibility needs of people with brain injuries. We identified 14 ways participants used the assistant to manage injury-related challenges — grouped into mental health, thinking and memory, health and recovery, and daily routines — and suggest ways to make voice assistants more accessible.</span></p>
       </section>
 
       <!-- RESOURCES -->
@@ -138,5 +143,6 @@ needs of people with TBI.</p>
   </script>
 
 <script src="../scripts/cursor-tip.js"></script>
+<script src="../scripts/lang-toggle.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
   <meta name="description" content="Participant recruitment information for research studies by Hailey L Johnson at UW-Madison — accessible technology studies for adults with Down syndrome and IDD." />
   <title>Participate — Hailey L Johnson</title>
   <link rel="stylesheet" href="style.css" />
+  <script>if(localStorage.getItem('lang-mode')==='simple')document.documentElement.classList.add('simple-mode');</script>
   <style>
 
     .page-subtitle { max-width: 100%; }
@@ -165,6 +166,10 @@
       <li><a href="cv.html">CV</a></li>
       <li><a href="participant-information.html" aria-current="page">Participate</a></li>
     </ul>
+    <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle plain language mode">
+      <span class="lang-toggle-track"><span class="lang-toggle-thumb"></span></span>
+      <span class="lang-toggle-text">Plain Language</span>
+    </button>
   </nav>
 
   <main id="main-content">
@@ -173,12 +178,12 @@
       <header class="page-header reveal">
         <p class="page-eyebrow">Research Participation</p>
         <h1 class="page-title">Participant Information</h1>
-        <p class="page-subtitle">Interested in contributing to research on accessible technology? Here's how to get involved.</p>
+        <p class="page-subtitle"><span class="lang-academic">Interested in contributing to research on accessible technology? Here's how to get involved.</span><span class="lang-simple">Want to help make technology better for everyone? Here's how you can take part in a research study.</span></p>
       </header>
 
       <div class="participant-intro reveal" role="note">
-        <p>My research depends on hearing directly from the people technology is meant to serve. Whether you're an adult with Down syndrome, a family member, or a disability specialist, your perspective matters.</p>
-        <p>All studies are reviewed and approved by the University of Wisconsin-Madison Institutional Review Board (IRB). Participation is always voluntary and you may withdraw at any time.</p>
+        <p><span class="lang-academic">My research depends on hearing directly from the people technology is meant to serve. Whether you're an adult with Down syndrome, a family member, or a disability specialist, your perspective matters.</span><span class="lang-simple">My research is only possible because people share their experiences with me. If you're an adult with Down syndrome, a family member, or someone who works with people with disabilities, your voice matters.</span></p>
+        <p><span class="lang-academic">All studies are reviewed and approved by the University of Wisconsin-Madison Institutional Review Board (IRB). Participation is always voluntary and you may withdraw at any time.</span><span class="lang-simple">Every study is reviewed by an ethics board at UW-Madison to make sure it's safe and respectful. You can always choose to stop participating, for any reason and at any time.</span></p>
       </div>
 
       <!-- STUDIES -->
@@ -199,8 +204,8 @@
             </div>
             <div class="study-body">
               <div class="study-desc">
-                <p>We are currently recruiting participants for a study exploring how adults with Intellectual and Developmental Disabilities (IDD) encounter and navigate security and privacy notifications on computers and smartphones.</p>
-                <p>We want to understand what makes these notifications confusing or inaccessible, and ultimately design better alternatives that work for everyone.</p>
+                <p><span class="lang-academic">We are currently recruiting participants for a study exploring how adults with Intellectual and Developmental Disabilities (IDD) encounter and navigate security and privacy notifications on computers and smartphones.</span><span class="lang-simple">We're looking for people to join a study about security and privacy warnings — the pop-up messages on computers and phones about passwords, updates, and privacy settings.</span></p>
+                <p><span class="lang-academic">We want to understand what makes these notifications confusing or inaccessible, and ultimately design better alternatives that work for everyone.</span><span class="lang-simple">We want to learn what makes these messages hard to understand, and use that to design clearer, easier versions that work for everyone.</span></p>
               </div>
               <a href="recruit/S_P_Flyer.pdf"
                  class="study-flyer"
@@ -237,7 +242,7 @@
             </div>
             <div class="study-body">
               <div class="study-desc">
-                <p>This study explored how adults with Down syndrome manage money in their daily lives, and evaluated prototype budgeting tools that combined augmented reality, gamification, and tangible interfaces. Recruitment for this study has closed.</p>
+                <p><span class="lang-academic">This study explored how adults with Down syndrome manage money in their daily lives, and evaluated prototype budgeting tools that combined augmented reality, gamification, and tangible interfaces. Recruitment for this study has closed.</span><span class="lang-simple">This study looked at how adults with Down syndrome handle money, and tested three prototype budgeting tools — a tablet game, a camera-based money app, and a hands-on physical device. This study is no longer recruiting.</span></p>
               </div>
               <a href="recruit/Co_Design_Flyer.pdf"
                  class="study-flyer"
@@ -268,7 +273,7 @@
             </div>
             <div class="study-body">
               <div class="study-desc">
-                <p>A national Qualtrics survey investigating how adults with Down syndrome and their families use technology in daily life. This study is now complete, and findings are informing future research directions.</p>
+                <p><span class="lang-academic">A national Qualtrics survey investigating how adults with Down syndrome and their families use technology in daily life. This study is now complete, and findings are informing future research directions.</span><span class="lang-simple">An online survey for adults with Down syndrome and their families about how they use phones, tablets, and other technology. This study is complete, and what we learned is shaping what we study next.</span></p>
               </div>
               <a href="recruit/Survey_Flyer.pdf"
                  class="study-flyer"
@@ -299,7 +304,7 @@
             </div>
             <div class="study-body">
               <div class="study-desc">
-                <p>Interviews with adults with Down syndrome, their parents/guardians, and domain experts to understand how technology is currently used in daily life and what gaps exist. This foundational study informed all subsequent projects.</p>
+                <p><span class="lang-academic">Interviews with adults with Down syndrome, their parents/guardians, and domain experts to understand how technology is currently used in daily life and what gaps exist. This foundational study informed all subsequent projects.</span><span class="lang-simple">Conversations with adults with Down syndrome, their families, and specialists about how they use technology. This was our first study, and what we learned guided everything we've worked on since.</span></p>
               </div>
               <a href="recruit/DS_Research_Flyer.pdf"
                  class="study-flyer"
@@ -324,7 +329,7 @@
       </section>
 
       <div class="ethics-note reveal" role="note" aria-label="Ethics and privacy note">
-        <p><strong>Your privacy and wellbeing come first.</strong> All studies are IRB-approved through the University of Wisconsin-Madison. Any data collected is anonymized and securely stored. Participation is entirely voluntary. You can withdraw at any time and for any reason without penalty.</p>
+        <p><span class="lang-academic"><strong>Your privacy and wellbeing come first.</strong> All studies are IRB-approved through the University of Wisconsin-Madison. Any data collected is anonymized and securely stored. Participation is entirely voluntary. You can withdraw at any time and for any reason without penalty.</span><span class="lang-simple"><strong>Your safety and privacy come first.</strong> Every study is approved by an ethics review board at UW-Madison. Any information you share is kept private and stored securely. You never have to participate, and you can stop at any time — no questions asked.</span></p>
         <p>Have questions before signing up? Feel free to reach out directly: <a href="mailto:hljohnson22@wisc.edu">hljohnson22@wisc.edu</a></p>
       </div>
 
@@ -387,5 +392,6 @@
   </style>
 
 <script src="scripts/cursor-tip.js"></script>
+<script src="scripts/lang-toggle.js"></script>
 </body>
 </html>

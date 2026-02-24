@@ -6,6 +6,7 @@
   <meta name="description" content="Exploratory Technology Study with Adults with Down Syndrome — published at CHI 2024." />
   <title>Exploratory Technology Study — Hailey L Johnson</title>
   <link rel="stylesheet" href="../style.css" />
+  <script>if(localStorage.getItem('lang-mode')==='simple')document.documentElement.classList.add('simple-mode');</script>
 </head>
 <body>
 
@@ -21,6 +22,10 @@
       <li><a href="../cv.html">CV</a></li>
       <li><a href="../participant-information.html">Participate</a></li>
     </ul>
+    <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle plain language mode">
+      <span class="lang-toggle-track"><span class="lang-toggle-thumb"></span></span>
+      <span class="lang-toggle-text">Plain Language</span>
+    </button>
   </nav>
 
   <main id="main-content">
@@ -59,7 +64,7 @@
       <section class="project-section reveal" aria-labelledby="abstract-heading">
         <h2 id="abstract-heading">Abstract</h2>
         <!-- TODO: Replace with the published CHI 2024 abstract -->
-        <p>Assistive technologies for adults with Down syndrome (DS) need
+        <p><span class="lang-academic">Assistive technologies for adults with Down syndrome (DS) need
 designs tailored to their specific technology requirements. While
 prior research has explored technology design for individuals with
 intellectual disabilities, little is understood about the needs and expectations
@@ -74,7 +79,7 @@ community vs. home social involvement; (2) misalignment of skill
 expectations between adults with DS and parents; (3) family limitations
 in technology support; and (4) considerations for technology
 development. Our findings extend prior literature by including the
-voices of adults with DS in how and when they use technology.</p>
+voices of adults with DS in how and when they use technology.</span><span class="lang-simple">We spoke with six adults with Down syndrome, seven of their parents, and three specialists in speech, education, and therapy to understand how technology fits into daily life. Our analysis found four main themes: differences between home and community social lives; gaps between what adults and parents expected regarding skills; limits on how much families can help with technology; and key considerations for designing better tools. This work centers the voices of adults with Down syndrome in understanding how and when they use technology.</span></p>
       </section>
 
       <!-- RESOURCES -->
@@ -145,5 +150,6 @@ voices of adults with DS in how and when they use technology.</p>
   </script>
 
 <script src="../scripts/cursor-tip.js"></script>
+<script src="../scripts/lang-toggle.js"></script>
 </body>
 </html>

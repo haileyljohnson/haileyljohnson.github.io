@@ -6,6 +6,7 @@
   <meta name="description" content="SMART-TBI: Design and evaluation of the Social Media Accessibility and Rehabilitation Toolkit for users with traumatic brain injury — published at ASSETS 2024." />
   <title>SMART-TBI — Hailey L Johnson</title>
   <link rel="stylesheet" href="../style.css" />
+  <script>if(localStorage.getItem('lang-mode')==='simple')document.documentElement.classList.add('simple-mode');</script>
   <style>
     .gallery-placeholder-block {
       background: var(--green-mist);
@@ -35,6 +36,10 @@
       <li><a href="../cv.html">CV</a></li>
       <li><a href="../participant-information.html">Participate</a></li>
     </ul>
+    <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle plain language mode">
+      <span class="lang-toggle-track"><span class="lang-toggle-thumb"></span></span>
+      <span class="lang-toggle-text">Plain Language</span>
+    </button>
   </nav>
 
   <main id="main-content">
@@ -73,7 +78,7 @@
       <section class="project-section reveal" aria-labelledby="abstract-heading">
         <h2 id="abstract-heading">Abstract</h2>
         <!-- TODO: Replace with the published ASSETS 2024 abstract -->
-         <p>Traumatic brain injury (TBI) can cause a range of cognitive and communication challenges that negatively affect social participation
+         <p><span class="lang-academic">Traumatic brain injury (TBI) can cause a range of cognitive and communication challenges that negatively affect social participation
           in both face-to-face interactions and computer-mediated communication. In particular, individuals with TBI report barriers that
           limit access to participation on social media platforms. To improve
           access to and use of social media for users with TBI, we introduce
@@ -84,7 +89,7 @@
           rehabilitation experts to evaluate each aid. Our findings revealed
           potential benefits of aids and areas for improvement, including the
           need for psychological safety, privacy control, and balancing business and accessibility needs; and overall mixed reactions among
-          the participants to AI-based aids.</p>
+          the participants to AI-based aids.</span><span class="lang-simple">Brain injuries can cause thinking and communication challenges that make social media hard to use. We created SMART-TBI — a toolkit with five tools: a Writing Aid to help compose posts, an Interpretation Aid to explain confusing messages, a Filter Mode to block upsetting content, a Focus Mode to reduce distractions, and Facebook Customization settings. We had eight people with moderate-to-severe brain injuries and five rehabilitation specialists evaluate each tool. We learned where the tools were most helpful and where they needed improvement — including the importance of privacy control, psychological safety, and mixed reactions to AI-based features.</span></p>
         </section>
 
       <!-- RESOURCES -->
@@ -150,5 +155,6 @@
   </script>
 
 <script src="../scripts/cursor-tip.js"></script>
+<script src="../scripts/lang-toggle.js"></script>
 </body>
 </html>

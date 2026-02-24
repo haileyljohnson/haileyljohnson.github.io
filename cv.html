@@ -7,7 +7,21 @@
 <title>CV — Hailey L Johnson</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,600&family=Nunito:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<script>if(localStorage.getItem('lang-mode')==='simple')document.documentElement.classList.add('simple-mode');</script>
 <style>
+/* LANGUAGE TOGGLE */
+.lang-simple{display:none;}
+.simple-mode .lang-academic{display:none;}
+.simple-mode .lang-simple{display:inline;}
+.simple-mode div.lang-simple{display:block;}
+.lang-toggle-btn{display:inline-flex;align-items:center;gap:.4rem;background:none;border:1.5px solid var(--moss-mid);border-radius:20px;padding:.28rem .65rem;font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;color:var(--moss);transition:background .18s,color .18s,border-color .18s;white-space:nowrap;flex-shrink:0;}
+.lang-toggle-btn:hover{background:var(--moss-mist);border-color:var(--moss);}
+.lang-toggle-btn[aria-checked="true"]{background:var(--moss);color:var(--white);border-color:var(--moss);}
+.lang-toggle-track{width:24px;height:13px;border-radius:7px;background:currentColor;opacity:.35;position:relative;flex-shrink:0;transition:opacity .18s;}
+.lang-toggle-btn[aria-checked="true"] .lang-toggle-track{opacity:.7;}
+.lang-toggle-thumb{position:absolute;top:2px;left:2px;width:9px;height:9px;border-radius:50%;background:white;transition:left .18s;box-shadow:0 1px 3px rgba(0,0,0,.25);}
+.lang-toggle-btn[aria-checked="true"] .lang-toggle-thumb{left:13px;}
+@media(max-width:760px){.lang-toggle-btn{font-size:.58rem;padding:.22rem .5rem;}}
 :root {
   --moss:#3a5c3e; --moss-mid:#527a58; --moss-light:#7da882; --moss-pale:#cce0ce; --moss-mist:#eef5ee;
   --cream:#faf7f2; --cream-dark:#f0ebe1; --sand:#e8dfc9;
@@ -162,6 +176,10 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     <li><a href="cv.html" class="active" aria-current="page">CV</a></li>
     <li><a href="participant-information.html">Participate</a></li>
   </ul>
+  <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle plain language mode">
+    <span class="lang-toggle-track"><span class="lang-toggle-thumb"></span></span>
+    <span class="lang-toggle-text">Plain Language</span>
+  </button>
 </nav>
 
 <!-- PAGE HEADER -->
@@ -231,15 +249,26 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
           <div class="cv-entry-title">Research Assistant</div>
           <div class="cv-entry-org">People and Robots Laboratory · UW-Madison</div>
           <div class="cv-entry-loc">Advisor: Dr. Bilge Mutlu · Madison, WI</div>
-          <div class="cv-entry-desc"><ul>
-            <li>Integrating interdependence into assistive technology design to increase usability and learnability for adults with Down syndrome.</li>
-            <li>Collaborating on a speech recognition tool for communication sciences researchers, optimizing models for individuals with Down syndrome.</li>
-            <li>Assessed privacy and security notification usability with adults with Down syndrome.</li>
-            <li>Co-designed and developed assistive technology probes, including gamified and AR tablet applications and a tangible interface using Raspberry Pi systems.</li>
-            <li>Completed a systematic scoping literature review on accessible technologies for adults with Down syndrome.</li>
-            <li>Conducted semi-structured interviews with adults with DS, parents/guardians, and experts on technology use in context to lived experiences.</li>
-            <li>Analyzed qualitative and quantitative data on user experiences with conversational agents and social media for individuals with TBI.</li>
-          </ul></div>
+          <div class="cv-entry-desc">
+            <div class="lang-academic"><ul>
+              <li>Integrating interdependence into assistive technology design to increase usability and learnability for adults with Down syndrome.</li>
+              <li>Collaborating on a speech recognition tool for communication sciences researchers, optimizing models for individuals with Down syndrome.</li>
+              <li>Assessed privacy and security notification usability with adults with Down syndrome.</li>
+              <li>Co-designed and developed assistive technology probes, including gamified and AR tablet applications and a tangible interface using Raspberry Pi systems.</li>
+              <li>Completed a systematic scoping literature review on accessible technologies for adults with Down syndrome.</li>
+              <li>Conducted semi-structured interviews with adults with DS, parents/guardians, and experts on technology use in context to lived experiences.</li>
+              <li>Analyzed qualitative and quantitative data on user experiences with conversational agents and social media for individuals with TBI.</li>
+            </ul></div>
+            <div class="lang-simple"><ul>
+              <li>Designing technology tools that are easier for adults with Down syndrome to learn and use, building in support for the people around them.</li>
+              <li>Working with researchers to build a speech recognition tool that works better for people with Down syndrome.</li>
+              <li>Studied how adults with Down syndrome understand and respond to privacy and security warnings on computers.</li>
+              <li>Built and tested prototype tools with adults with Down syndrome — including tablet games, augmented reality apps, and hands-on physical devices.</li>
+              <li>Reviewed published research papers on technology tools designed for adults with Down syndrome.</li>
+              <li>Interviewed adults with Down syndrome, their families, and specialists about how they use technology in their daily lives.</li>
+              <li>Analyzed study data on how people with brain injuries use voice assistants and social media.</li>
+            </ul></div>
+          </div>
         </div>
         <div class="cv-entry-date">May 2022 - Present</div>
       </div>
@@ -270,12 +299,20 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
           <div class="cv-entry-title">Computer Engineer II &amp; Lab Manager</div>
           <div class="cv-entry-org">DCS Corporation</div>
           <div class="cv-entry-loc">Aberdeen, MD</div>
-          <div class="cv-entry-desc"><ul>
-            <li>Designed and developed a multiplayer game in QT/C++ for human-agent teaming research studying reaction time under risk and ambiguity.</li>
-            <li>Developed a quantified uncertainty study in Qualtrics and JavaScript to understand how information framing enhances computer-based training.</li>
-            <li>Developed a human teaming virtual environment task in Unreal Engine/C++ to study remote teaming communication under stress.</li>
-            <li>Managed the Innovation Commons lab space operations for Army Research Laboratories (ARL).</li>
-          </ul></div>
+          <div class="cv-entry-desc">
+            <div class="lang-academic"><ul>
+              <li>Designed and developed a multiplayer game in QT/C++ for human-agent teaming research studying reaction time under risk and ambiguity.</li>
+              <li>Developed a quantified uncertainty study in Qualtrics and JavaScript to understand how information framing enhances computer-based training.</li>
+              <li>Developed a human teaming virtual environment task in Unreal Engine/C++ to study remote teaming communication under stress.</li>
+              <li>Managed the Innovation Commons lab space operations for Army Research Laboratories (ARL).</li>
+            </ul></div>
+            <div class="lang-simple"><ul>
+              <li>Built a multiplayer game to study how people make quick decisions when working alongside computer systems under pressure.</li>
+              <li>Created an online study to understand how presenting information in different ways affects learning from computers.</li>
+              <li>Built a virtual environment to study how teams communicate when working together remotely under stressful conditions.</li>
+              <li>Managed day-to-day operations of the Army Research Lab's innovation workspace.</li>
+            </ul></div>
+          </div>
         </div>
         <div class="cv-entry-date">Aug 2019 - Aug 2021</div>
       </div>
@@ -535,5 +572,6 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
   document.querySelectorAll('.fu').forEach(el => obs.observe(el));
 </script>
 <script src="scripts/cursor-tip.js"></script>
+<script src="scripts/lang-toggle.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
   <meta name="description" content="National Technology Usage Survey Study — investigating technology use patterns and preferences of adults with Down syndrome across the United States." />
   <title>National Technology Usage Survey — Hailey L Johnson</title>
   <link rel="stylesheet" href="../style.css" />
+  <script>if(localStorage.getItem('lang-mode')==='simple')document.documentElement.classList.add('simple-mode');</script>
 </head>
 <body>
 
@@ -21,6 +22,10 @@
       <li><a href="../cv.html">CV</a></li>
       <li><a href="../participant-information.html">Participate</a></li>
     </ul>
+    <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle plain language mode">
+      <span class="lang-toggle-track"><span class="lang-toggle-thumb"></span></span>
+      <span class="lang-toggle-text">Plain Language</span>
+    </button>
   </nav>
 
   <main id="main-content">
@@ -59,13 +64,13 @@
       <section class="project-section reveal" aria-labelledby="abstract-heading">
         <h2 id="abstract-heading">Abstract</h2>
         <!-- TODO: Replace with full abstract -->
-        <p>Adults with Down syndrome (AwDS) increasingly engage with digital technologies, yet little is known about the specific tools they use and why some are discontinued. To address this gap, 
-          we piloted a modular, image-supported survey with 15 AwDS across 11 U.S. states. The survey, which took 60--90 minutes to complete, captured adoption, 
-          frequency of use, usability, and discontinuation across 30 technology categories. Our analysis revealed several trends: (1) high adoption of smartphones, messaging apps, 
-          and weather apps; (2) low usage of educational and financial tools, as well as virtual reality headsets, augmentative and alternative communication devices, and smartwatches; 
-          and (3) discontinuation that was more common for hardware than software, often linked to shifting needs, broken or shared devices, or the need for support. While participants 
-          reported interest in using technology for learning, communication, and daily living, fewer expressed interest in work-related tools. This study demonstrates the feasibility of 
-          self-reported technology research with AwDS and highlights opportunities for designing familiar and flexible tools to meet evolving needs.</p>
+        <p><span class="lang-academic">Adults with Down syndrome (AwDS) increasingly engage with digital technologies, yet little is known about the specific tools they use and why some are discontinued. To address this gap,
+          we piloted a modular, image-supported survey with 15 AwDS across 11 U.S. states. The survey, which took 60--90 minutes to complete, captured adoption,
+          frequency of use, usability, and discontinuation across 30 technology categories. Our analysis revealed several trends: (1) high adoption of smartphones, messaging apps,
+          and weather apps; (2) low usage of educational and financial tools, as well as virtual reality headsets, augmentative and alternative communication devices, and smartwatches;
+          and (3) discontinuation that was more common for hardware than software, often linked to shifting needs, broken or shared devices, or the need for support. While participants
+          reported interest in using technology for learning, communication, and daily living, fewer expressed interest in work-related tools. This study demonstrates the feasibility of
+          self-reported technology research with AwDS and highlights opportunities for designing familiar and flexible tools to meet evolving needs.</span><span class="lang-simple">Adults with Down syndrome use many kinds of technology, but we knew little about which tools they use most, or why they stop using some. We ran an image-supported online survey — designed to be accessible — with 15 adults with Down syndrome across 11 U.S. states, asking about 30 types of technology. Key findings: smartphones, messaging apps, and weather apps were most popular; educational and financial tools were rarely used; and technology was most often stopped due to changing needs, broken devices, or needing more support. This study shows that adults with Down syndrome can participate in technology research and share their own experiences.</span></p>
       </section>
 
       <!-- RESOURCES -->
@@ -137,5 +142,6 @@
   </script>
 
 <script src="../scripts/cursor-tip.js"></script>
+<script src="../scripts/lang-toggle.js"></script>
 </body>
 </html>

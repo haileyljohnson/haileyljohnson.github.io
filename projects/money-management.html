@@ -6,6 +6,7 @@
   <meta name="description" content="Money Management Technology Probe Study — prototyping and evaluating budgeting tools with adults with Down syndrome." />
   <title>Money Management Technology Probe — Hailey L Johnson</title>
   <link rel="stylesheet" href="../style.css" />
+  <script>if(localStorage.getItem('lang-mode')==='simple')document.documentElement.classList.add('simple-mode');</script>
 </head>
 <body>
 
@@ -21,6 +22,10 @@
       <li><a href="../cv.html">CV</a></li>
       <li><a href="../participant-information.html">Participate</a></li>
     </ul>
+    <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle plain language mode">
+      <span class="lang-toggle-track"><span class="lang-toggle-thumb"></span></span>
+      <span class="lang-toggle-text">Plain Language</span>
+    </button>
   </nav>
 
   <main id="main-content">
@@ -59,7 +64,7 @@
       <section class="project-section reveal" aria-labelledby="abstract-heading">
         <h2 id="abstract-heading">Abstract</h2>
         <!-- TODO: Replace with full abstract -->
-        <p>Financial decision-making is critical to adult autonomy, yet many
+        <p><span class="lang-academic">Financial decision-making is critical to adult autonomy, yet many
 adults with Down syndrome (AwDS) have limited opportunities
 or support to develop money management skills, often receiving
 allowances while caregivers oversee financial obligations. To better
@@ -78,7 +83,7 @@ screen and cash, shaped by prior budgeting/technology experience.
 These findings point to three design implications: (1) surface budgeting
 as a stimulating multi-goal puzzle, not just a sequence of steps;
 (2) design error recovery that connects screen state and real money;
-(3) support interdependent use without collapsing autonomy.</p>
+(3) support interdependent use without collapsing autonomy.</span><span class="lang-simple">Managing money is important for adult independence, but many adults with Down syndrome have limited chances to practice. We built three budgeting tools and had seven adults with Down syndrome try all three: a tablet game, an app that uses a camera to help with real money, and a hands-on device with physical controls. Each tool had tradeoffs — the game was fun but made people rush; the camera app reduced math errors but led people to skip checking their work; the physical device was engaging but tricky to coordinate. Based on what we learned, we suggest three design principles for future budgeting tools.</span></p>
       </section>
 
       <!-- RESOURCES -->
@@ -150,5 +155,6 @@ as a stimulating multi-goal puzzle, not just a sequence of steps;
   </script>
 
 <script src="../scripts/cursor-tip.js"></script>
+<script src="../scripts/lang-toggle.js"></script>
 </body>
 </html>

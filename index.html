@@ -7,6 +7,7 @@
 <title>Hailey L Johnson</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,600&family=Nunito:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<script>if(localStorage.getItem('lang-mode')==='simple')document.documentElement.classList.add('simple-mode');</script>
 <style>
 :root {
   --moss:#3a5c3e; --moss-mid:#527a58; --moss-light:#7da882; --moss-pale:#cce0ce; --moss-mist:#eef5ee;
@@ -19,6 +20,20 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);line-height:1.7;min-height:100vh;}
+
+/* LANGUAGE TOGGLE */
+.lang-simple{display:none;}
+.simple-mode .lang-academic{display:none;}
+.simple-mode .lang-simple{display:inline;}
+.simple-mode div.lang-simple{display:block;}
+.lang-toggle-btn{display:inline-flex;align-items:center;gap:.4rem;background:none;border:1.5px solid var(--moss-mid);border-radius:20px;padding:.28rem .65rem;font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;color:var(--moss);transition:background .18s,color .18s,border-color .18s;white-space:nowrap;flex-shrink:0;}
+.lang-toggle-btn:hover{background:var(--moss-mist);border-color:var(--moss);}
+.lang-toggle-btn[aria-checked="true"]{background:var(--moss);color:var(--white);border-color:var(--moss);}
+.lang-toggle-track{width:24px;height:13px;border-radius:7px;background:currentColor;opacity:.35;position:relative;flex-shrink:0;transition:opacity .18s;}
+.lang-toggle-btn[aria-checked="true"] .lang-toggle-track{opacity:.7;}
+.lang-toggle-thumb{position:absolute;top:2px;left:2px;width:9px;height:9px;border-radius:50%;background:white;transition:left .18s;box-shadow:0 1px 3px rgba(0,0,0,.25);}
+.lang-toggle-btn[aria-checked="true"] .lang-toggle-thumb{left:13px;}
+@media(max-width:760px){.lang-toggle-btn{font-size:.58rem;padding:.22rem .5rem;}}
 
 /* SKIP */
 .skip{position:absolute;top:-100%;left:1rem;z-index:9999;background:var(--moss);color:#fff;padding:.5rem 1rem;border-radius:0 0 4px 4px;font-size:.9rem;text-decoration:none;transition:top .2s;}
@@ -324,6 +339,10 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     <a href="cv.html">CV</a>
     <a href="participant-information.html">Participate</a>
   </ul>
+  <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle plain language mode">
+    <span class="lang-toggle-track"><span class="lang-toggle-thumb"></span></span>
+    <span class="lang-toggle-text">Plain Language</span>
+  </button>
 </nav>
 
 <main id="main">
@@ -343,7 +362,8 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
       <h1 class="hero-name fu">Hailey L Johnson</h1>
       <p class="hero-pro fu">she / her</p>
       <p class="hero-bio fu">
-        I'm a CS PhD student at the <strong>University of Wisconsin-Madison</strong> in the <a href="https://peopleandrobots.wisc.edu/" target="_blank" rel="noopener">People and Robots Lab</a>, advised by <a href="http://bilgemutlu.com/" target="_blank" rel="noopener">Prof. Bilge Mutlu</a>. I design and build supportive technologies for adults with Down syndrome.
+        <span class="lang-academic">I'm a computer science student at the <strong>University of Wisconsin-Madison</strong> in the <a href="https://peopleandrobots.wisc.edu/" target="_blank" rel="noopener">People and Robots Lab</a>, advised by <a href="http://bilgemutlu.com/" target="_blank" rel="noopener">Prof. Bilge Mutlu</a>. I design and build supportive technologies for adults with Down syndrome. I design tangible interfaces and accessible systems that center the people who use them.</span>
+        <span class="lang-simple">I'm a computer science PhD student at the <strong>University of Wisconsin-Madison</strong>. I work in the <a href="https://peopleandrobots.wisc.edu/" target="_blank" rel="noopener">People and Robots Lab</a> with <a href="http://bilgemutlu.com/" target="_blank" rel="noopener">Prof. Bilge Mutlu</a>. My work focuses on building technology tools that help adults with Down syndrome in their daily lives, like apps that overlay information on the real world, hands-on devices, and tools designed around what people actually need.</span>
       </p>
 
       <nav aria-label="External profiles" class="fu">
@@ -374,17 +394,24 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
   <div class="bg-tinted">
   <div class="section">
     <p class="s-tag fu">Research Journey</p>
-    <h2 class="s-title fu">My Research Journey</h2>
+    <h2 class="s-title fu"><span class="lang-academic">My Research Journey</span><span class="lang-simple">My Work</span></h2>
     <div class="research-text fu">
-      <p>I am committed to creating inclusive, accessible technologies that enable adults with DS to achieve their personal and occupational goals. My research is guided by a collaborative, user-centered approach that includes building connections with the DS community, engaging in co-design studies, and conducting user studies of technology solutions. Through this process, I strive to bridge the gap between technological innovation and the lived experiences of adults with DS.</p>
-      <p>Highlights of my work include:</p>
+      <p><span class="lang-academic">I am committed to creating inclusive, accessible technologies that enable adults with Down syndrome (DS) to achieve their personal and occupational goals. My research is guided by a collaborative, user-centered approach that includes building connections with the DS community, engaging in co-design studies, and conducting user studies of technology solutions. Through this process, I strive to bridge the gap between technological innovation and the lived experiences of adults with DS.</span>
+        <span class="lang-simple">I want to build technology that helps adults with Down syndrome (DS) reach their personal and work goals. I don't just design in isolation — I talk with and learn from the DS community, work with them to shape ideas, and test technology with real users. The goal is to make sure what I build actually fits into people's real lives.</span></p>
+      <p><span class="lang-academic">Highlights of my work include:</span>
+        <span class="lang-simple">Some examples of my work:</span></p>
       <ul>
-        <li>Conducting qualitative interview studies with adults with DS, their parents, and experts to explore how technology is currently used within their daily lives and identify opportunities for technology support.</li>
-        <li>Completing a systematic scoping literature review to uncover gaps in existing research and inform the design of future assistive technologies.</li>
-        <li>Leading technology probe studies to prototype and refine innovative budgeting systems that integrate AR, gamification, and tangible interfaces.</li>
-        <li>Assessing computer security and privacy notifications to develop more accessible systems for adults with Intellectual and Developmental Disabilities (IDD).</li>
+        <li><span class="lang-academic">Conducting qualitative interview studies with adults with DS, their parents, and experts to explore how technology is currently used within their daily lives and identify opportunities for technology support.</span>
+          <span class="lang-simple">Interviewing adults with Down syndrome, their families, and specialists to learn how they use technology today and where new tools could help.</span></li>
+        <li><span class="lang-academic">Completing a systematic scoping literature review to uncover gaps in existing research and inform the design of future assistive technologies.</span>
+          <span class="lang-simple">Reviewing many research papers to find out what has already been made and where more work is still needed.</span></li>
+        <li><span class="lang-academic">Leading technology probe studies to prototype and refine innovative budgeting systems that integrate AR, gamification, and tangible interfaces.</span>
+          <span class="lang-simple">Building and testing simple budgeting tools. Including a game-style app, an augmented reality app, and a hands-on physical device to see what people like.</span></li>
+        <li><span class="lang-academic">Assessing computer security and privacy notifications to develop more accessible systems for adults with Intellectual and Developmental Disabilities (IDD).</span>
+          <span class="lang-simple">Studying how adults with intellectual and developmental disabilities interact with security alerts and privacy pop-ups on computers and phones to make better alerts.</span></li>
       </ul>
-      <p>My goal is to ensure that every project centers the voices of adults with DS, designing technologies that are not only functional but also empowering and meaningful.</p>
+      <p><span class="lang-academic">My goal is to ensure that every project centers the voices of adults with DS, designing technologies that are not only functional but also empowering and meaningful.</span>
+        <span class="lang-simple">In every project, the people I'm designing for have a real say. The goal isn't just technology that works, it's technology that actually matters to the people using it.</span></p>
     </div>
   </div>
   </div>
@@ -394,7 +421,7 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
   <!-- TEAM -->
   <div class="section">
     <p class="s-tag fu">Collaborators</p>
-    <h2 class="s-title fu">The Team Around Me</h2>
+    <h2 class="s-title fu"><span class="lang-academic">Research Collaborations and Mentorship</span><span class="lang-simple">The Team Around Me</span> </h2>
     <div class="team-legend fu" aria-label="Color key for team roles">
       <span class="legend-item"><span class="legend-dot" style="background:var(--terra)"></span>Advisor</span>
       <span class="legend-item"><span class="legend-dot" style="background:#3d6a90"></span>Professor</span>
@@ -456,7 +483,8 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
           <img class="p9" src="images/hobbies/parks-acadia2.jpg"    alt="" loading="lazy"/>
         </div>
         <div class="hobby-body">
-          <p class="hobby-desc">Growing up in Washington made loving the outdoors feel inevitable. Hiking is one of my favorite ways to slow down and recharge. I'm gradually checking national parks off my list and already have the next few planned.</p>
+          <p class="hobby-desc"><span class="lang-academic">Growing up in Washington made loving the outdoors feel inevitable. Hiking is one of my favorite ways to slow down and recharge. I'm gradually checking national parks off my list and already have the next few planned.</span>
+            <span class="lang-simple">Growing up in Washington, I fell in love with being outside. Hiking is one of my favorite ways to unwind. I'm slowly working through the national parks list and always have the next trip on my mind.</span></p>
         </div>
       </article>
 
@@ -467,7 +495,8 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
           <h3 id="hob-reading" class="hobby-title">Reading</h3>
         </div>
         <div class="hobby-body">
-          <p class="hobby-desc">I enjoy fantasy, magical realism, and classics, especially stories driven by strong characters and thoughtful reflections on identity, relationships, and meaning. A few favorites:</p>
+          <p class="hobby-desc"><span class="lang-academic">I enjoy fantasy, magical realism, and classics, especially stories driven by strong characters and thoughtful reflections on identity, relationships, and meaning. A few favorites:</span>
+            <span class="lang-simple">I love reading fantasy, magical realism, and classic books. A few favorites:</span></p>
           <ul class="bklist" aria-label="Favorite books">
             <li>Gideon the Ninth</li>
             <li>Mrs. Dalloway</li>
@@ -494,7 +523,8 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
           <img class="s3" src="images/hobbies/sewing-frame.jpg" alt="" loading="lazy"/>
         </div>
         <div class="hobby-body">
-          <p class="hobby-desc">I picked up sewing during COVID as a creative outlet, and it quickly became a favorite way to unwind. Tote bags, quilts, dresses, pants, jackets, shirts — though my growing fabric stash suggests I may be more optimistic than realistic about future projects.</p>
+          <p class="hobby-desc"><span class="lang-academic">I picked up sewing during COVID as a creative outlet, and it quickly became a favorite way to unwind. I enjoy trying new patterns and making useful items, and I love the quiet satisfaction of watching fabric become form, one deliberate step at a time.</span>
+          <span class="lang-simple">I started sewing during COVID, and I really enjoy it. Sewing helps me relax. I like choosing a pattern and making something I can use. It feels good to turn fabric into something real.</span></p>   
         </div>
       </article>
 
@@ -510,7 +540,8 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
           <img class="b3" src="images/hobbies/baking-pie.jpg"   alt="" loading="lazy"/>
         </div>
         <div class="hobby-body">
-          <p class="hobby-desc">Taught by my mom, baking has been part of my life for as long as I can remember. Cakes, pies, cookies, sourdough — one of my favorite ways to relax and connect with others.</p>
+          <p class="hobby-desc"><span class="lang-academic">Baking has been part of my life for as long as I can remember, thanks to my mom. I like making everything from cookies to sourdough, and it is one of my favorite ways to unwind, be creative, and share something homemade with others.</span>
+          <span class="lang-simple">My mom taught me to bake, and I never really stopped. I like making everything from cookies to sourdough, and it is one of my favorite ways to relax and share something tasty with the people around me.</span></p>
         </div>
       </article>
 
@@ -527,8 +558,11 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     <div class="vision fu">
       <p class="s-tag">Looking Ahead</p>
       <h2 class="s-title">Future Career Vision</h2>
-      <p>My long-term aspiration is to become a professor of Computer Science, with a lab that focuses on accessibility for individuals with cognitive disabilities. I hope to establish a research program that bridges academia and the community, with students volunteering alongside local organizations to foster meaningful connections.</p>
-      <p>My vision extends beyond academia. I want to contribute to evolving accessibility guidelines for industry and government, ensuring technology is inclusive for everyone. <a href="mailto:hljohnson22@wisc.edu">Reach out anytime</a> if you'd like to connect!</p>
+      <p><span class="lang-academic">My long-term aspiration is to become a Professor of Computer Science and lead a research lab focused on accessibility for people with cognitive disabilities. I aim to build a community-engaged research program that bridges academic inquiry and real-world impact through sustained partnerships with local organizations, where students collaborate directly with community stakeholders.</span>
+      <span class="lang-simple">My long-term goal is to become a computer science professor and run my own research lab focused on making technology accessible for people with cognitive disabilities. I want to build a program where students work directly with local groups, not just in labs, but out in the community.</span></p>
+
+      <p><span class="lang-academic">Beyond academia, I hope to contribute to the evolution of accessibility guidelines in industry and government to help ensure inclusive technologies are the norm rather than the exception. <a href="mailto:hljohnson22@wisc.edu">Reach out anytime</a> if you’d like to connect.</span>
+      <span class="lang-simple">I also want to help shape how companies and governments think about accessibility, so that inclusive design becomes the standard. <a href="mailto:hljohnson22@wisc.edu">Feel free to reach out</a> if you'd like to chat!</span></p>
     </div>
   </div>
 
@@ -560,3 +594,4 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
   document.querySelectorAll('.fu').forEach(el => { el.classList.add('animate'); obs.observe(el); });
 </script>
 <script src="scripts/cursor-tip.js"></script>
+<script src="scripts/lang-toggle.js"></script>
