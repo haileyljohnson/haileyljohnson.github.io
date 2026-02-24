@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Security and Privacy Notifications study — how adults with IDD navigate security and privacy prompts on computers and smartphones." />
+  <title>Security &amp; Privacy Notifications — Hailey L Johnson</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="../index.html" class="nav-home" aria-label="Hailey L Johnson — Home">Hailey L Johnson</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="../index.html">About</a></li>
+      <li><a href="../publications.html">Publications</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li><a href="../cv.html">CV</a></li>
+      <li><a href="../participant-information.html">Participate</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <div class="page-wrapper">
+
+      <a href="../portfolio.html" class="back-link">← Back to Portfolio</a>
+
+      <header class="page-header reveal">
+        <p class="page-eyebrow">Research Project · In Progress</p>
+        <h1 class="page-title">"I'm trying not to get hacked:" How Adults with IDD Navigate Security and Privacy Notifications</h1>
+        <div class="project-detail-meta">
+          <span class="badge badge-active">
+            <span class="status-dot" aria-hidden="true"></span>
+            In Progress
+          </span>
+          <span class="badge badge-amber">Security &amp; Privacy</span>
+          <span class="badge badge-green">IDD</span>
+        </div>
+      </header>
+
+      <!-- PHOTO GALLERY -->
+      <section class="project-gallery reveal" aria-label="Project images">
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="../images/SandP.png" alt="Graphic representing security and privacy notification study" />
+            <figcaption class="gallery-caption">Study overview figure</figcaption>
+          </figure>
+          <!-- TODO: Add additional study photos below. Copy and paste a <figure> block:
+          <figure class="gallery-item">
+            <img src="../images/YOUR_PHOTO.jpg" alt="Description of photo" />
+            <figcaption class="gallery-caption">Caption here</figcaption>
+          </figure>
+          -->
+        </div>
+      </section>
+
+      <!-- ABSTRACT -->
+      <section class="project-section reveal" aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading">Abstract</h2>
+        <!-- TODO: Replace with full abstract -->
+        <p>Security and privacy notifications—such as login alerts, spam e-mail warnings, and cookie consent requests—play a critical role in
+shaping how users respond to digital risks. Yet most notifications overlook cognitive accessibility, limiting their effectiveness for
+people with intellectual and developmental disabilities (IDD). In this work, we investigate how adults with IDD perceive and respond
+to common security and privacy notifications across mobile and web applications. Through a user study involving six adults with IDD,
+we identified key factors that influenced their understanding and decision-making, including reliance on visual or symbolic cues,
+simplification of complex terms, interdependence with support persons, and familiarity with everyday functions. We further highlight
+interaction challenges, including misunderstandings of notification purpose and flow, misinterpretations of language and terminology,
+and misalignments of action-outcome expectations. Our results contribute design recommendations to advance usable privacy and
+security, supporting safer and more autonomous digital engagement for users with IDD.</p>
+      </section>
+
+      <!-- RESOURCES -->
+      <section class="project-section reveal" aria-labelledby="resources-heading">
+        <h2 id="resources-heading">Resources</h2>
+        <div class="project-resources">
+          <!-- Paper not yet published — uncomment when available:
+          <a href="#" class="btn btn-primary" rel="noopener" target="_blank"
+             aria-label="Read the paper (opens in new tab)">
+            Read the Paper ↗
+          </a>
+          -->
+          <!-- TODO: Add protocol link if/when available
+          <a href="#" class="btn btn-outline" rel="noopener" target="_blank"
+             aria-label="View study protocol (opens in new tab)">
+            View Protocol ↗
+          </a>
+          -->
+          <a href="../participant-information.html" class="btn btn-primary">
+            Sign Up to Participate
+          </a>
+          <a href="../recruit/S_P_Flyer.pdf" class="btn btn-outline" rel="noopener" target="_blank"
+             aria-label="Download recruitment flyer PDF (opens in new tab)">
+            Download Flyer (PDF)
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-name">Hailey L Johnson</div>
+        <div class="footer-sub">Ph.D. Candidate · UW-Madison</div>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../index.html">About</a>
+        <a href="../publications.html">Publications</a>
+        <a href="../portfolio.html">Portfolio</a>
+        <a href="../cv.html">CV</a>
+        <a href="../participant-information.html">Participate</a>
+      </nav>
+      <div class="footer-copy">© 2026 Hailey L Johnson</div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu   = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.site-nav')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      }
+    });
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 70);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => io.observe(el));
+  </script>
+
+<script src="../scripts/cursor-tip.js"></script>
+</body>
+</html>

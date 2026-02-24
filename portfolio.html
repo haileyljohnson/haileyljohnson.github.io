@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research portfolio of Hailey L Johnson — projects on accessible technology, Down syndrome, and Traumatic Brain Injury." />
+  <title>Portfolio — Hailey L Johnson</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .page-subtitle { max-width: 100%; }
+
+    .project-card {
+      background: var(--white);
+      border: 1px solid var(--green-pale);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.22s, box-shadow 0.22s;
+      position: relative;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .project-card:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 3px;
+    }
+
+    /* Accent bar */
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--green-mid), var(--green-light));
+      opacity: 0;
+      transition: opacity 0.22s;
+    }
+    .project-card:hover::before { opacity: 1; }
+
+    .project-img-wrap {
+      height: 180px;
+      overflow: hidden;
+      background: var(--green-mist);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .project-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.4s ease;
+    }
+    .project-card:hover .project-img-wrap img {
+      transform: scale(1.04);
+    }
+
+    .project-body {
+      padding: 1.4rem 1.5rem 1.6rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .project-title {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--green-deep);
+      line-height: 1.4;
+      margin-bottom: 0.6rem;
+    }
+
+    .project-desc {
+      font-size: 0.87rem;
+      color: var(--text-light);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .project-cta {
+      margin-top: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+    }
+
+    .project-img-placeholder {
+      height: 180px;
+      background: var(--green-mist);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--green-light);
+    }
+
+    @media (max-width: 680px) {
+      .portfolio-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-home" aria-label="Hailey L Johnson — Home">Hailey L Johnson</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">☰</button>
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="index.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="participant-information.html">Participate</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <div class="page-wrapper">
+
+      <header class="page-header reveal">
+        <p class="page-eyebrow">Research Projects</p>
+        <h1 class="page-title">Portfolio</h1>
+        <p class="page-subtitle">An overview of my research projects, from qualitative studies to technology probes and system design.</p>
+      </header>
+
+      <div class="portfolio-grid" role="list">
+
+        <a href="projects/security-privacy.html" class="project-card reveal" role="listitem"
+           aria-label="Security and Privacy Notifications — IDD project">
+          <div class="project-img-wrap">
+            <img src="images/SandP.png"
+                 alt="Graphic representing security and privacy notification study" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-hidden="true">
+              <span class="badge badge-green">In Progress</span>
+              <span class="badge badge-amber">Security &amp; Privacy</span>
+            </div>
+            <h2 class="project-title">"I'm trying not to get hacked:" How Adults with IDD Navigate Security and Privacy Notifications</h2>
+            <p class="project-desc">Exploring how adults with Intellectual and Developmental Disabilities encounter and respond to computer security and privacy notifications, and designing more accessible alternatives.</p>
+            <span class="project-cta" aria-hidden="true">View project →</span>
+          </div>
+        </a>
+
+        <a href="projects/money-management.html" class="project-card reveal" role="listitem"
+           aria-label="Money Management Technology Probe Study">
+          <div class="project-img-wrap">
+            <img src="images/TechProbe.png"
+                 alt="Technology probe study materials for money management" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-hidden="true">
+              <span class="badge badge-done">Complete</span>
+              <span class="badge badge-green">AR · Tangible Interfaces</span>
+            </div>
+            <h2 class="project-title">Supporting Money Management among Adults with Down Syndrome: A Multi-Technology Probe Study</h2>
+            <p class="project-desc">Prototyped and evaluated budgeting systems integrating augmented reality, gamification, and tangible interfaces in collaboration with adults with DS.</p>
+            <span class="project-cta" aria-hidden="true">View project →</span>
+          </div>
+        </a>
+
+        <a href="projects/survey.html" class="project-card reveal" role="listitem"
+           aria-label="National Technology Usage Survey Study">
+          <div class="project-img-wrap">
+            <img src="images/SurveyTeaserFig.png"
+                 alt="Survey study teaser figure" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-hidden="true">
+              <span class="badge badge-done">Complete</span>
+              <span class="badge badge-green">Survey · Qualtrics</span>
+            </div>
+            <h2 class="project-title">National Technology Usage Survey Study with Adults with Down Syndrome</h2>
+            <p class="project-desc">A national online survey study investigating the technology usage patterns and preferences of adults with DS across the United States.</p>
+            <span class="project-cta" aria-hidden="true">View project →</span>
+          </div>
+        </a>
+
+        <a href="projects/prisma-review.html" class="project-card reveal" role="listitem"
+           aria-label="PRISMA Literature Review on Assistive Technologies">
+          <div class="project-img-wrap">
+            <img src="images/RQModel.png"
+                 alt="Research question model diagram from literature review" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-hidden="true">
+              <span class="badge badge-done">Complete</span>
+              <span class="badge badge-amber">Published · TACCESS 2025</span>
+            </div>
+            <h2 class="project-title">PRISMA Literature Review on Assistive Technologies with Adults with Down Syndrome</h2>
+            <p class="project-desc">A systematic scoping review of 20 papers, identifying gaps in accessible technology research for adults with DS and informing future design directions.</p>
+            <span class="project-cta" aria-hidden="true">View project →</span>
+          </div>
+        </a>
+
+        <a href="projects/exploratory-study.html" class="project-card reveal" role="listitem"
+           aria-label="Exploratory Technology Study with Adults with Down Syndrome">
+          <div class="project-img-wrap">
+            <img src="images/TeaserFig.png"
+                 alt="Teaser figure from exploratory technology study" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-hidden="true">
+              <span class="badge badge-done">Complete</span>
+              <span class="badge badge-amber">Published · CHI 2024</span>
+            </div>
+            <h2 class="project-title">Exploratory Technology Study with Adults with Down Syndrome</h2>
+            <p class="project-desc">Qualitative interviews with adults with DS, their parents, and domain experts to understand current technology use and identify unmet needs.</p>
+            <span class="project-cta" aria-hidden="true">View project →</span>
+          </div>
+        </a>
+
+        <a href="projects/tbi-ca.html" class="project-card reveal" role="listitem"
+           aria-label="Conversational Agents for people with TBI">
+          <div class="project-img-wrap">
+            <img src="images/TBI-CA_Teaser.png"
+                 alt="Teaser figure from conversational agents TBI study" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-hidden="true">
+              <span class="badge badge-done">Complete</span>
+              <span class="badge badge-amber">Published · ASSETS 2023</span>
+            </div>
+            <h2 class="project-title">Conversational Agents for People with Traumatic Brain Injury (TBI)</h2>
+            <p class="project-desc">A four-week at-home study giving nine adults with TBI a conversational agent, investigating daily use patterns, challenges, and design requirements.</p>
+            <span class="project-cta" aria-hidden="true">View project →</span>
+          </div>
+        </a>
+
+        <a href="projects/smart-tbi.html" class="project-card reveal" role="listitem"
+           aria-label="SMART-TBI: Social Media Accessibility and Rehabilitation Toolkit">
+          <div class="project-img-wrap">
+            <img src="images/smarttbi.png"
+                 alt="person looking at a computer with 5 social media aids around the screen to choose." />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-hidden="true">
+              <span class="badge badge-done">Complete</span>
+              <span class="badge badge-amber">Published · ASSETS 2024</span>
+            </div>
+            <h2 class="project-title">SMART-TBI: Design and Evaluation of the Social Media Accessibility and Rehabilitation Toolkit for Users with TBI</h2>
+            <p class="project-desc">Design and evaluation of a toolkit supporting accessible and rehabilitative social media use for adults with traumatic brain injury.</p>
+            <span class="project-cta" aria-hidden="true">View project →</span>
+          </div>
+        </a>
+
+        <a href="projects/tbi-social-media.html" class="project-card reveal" role="listitem"
+           aria-label="Supporting individuals with TBI through digital aids for social media">
+          <div class="project-img-placeholder" aria-hidden="true">Image coming soon</div>
+          <div class="project-body">
+            <div class="project-tags" aria-hidden="true">
+              <span class="badge badge-done">Complete</span>
+              <span class="badge badge-green">TBI · Social Media</span>
+            </div>
+            <h2 class="project-title">Supporting Individuals with TBI Through the Use of Digital Aids for Social Media: An In-the-Wild Study</h2>
+            <p class="project-desc">An in-the-wild study examining how adults with traumatic brain injury use digital aids to navigate social media platforms in everyday life.</p>
+            <span class="project-cta" aria-hidden="true">View project →</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-name">Hailey L Johnson</div>
+        <div class="footer-sub">Ph.D. Candidate · UW-Madison</div>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="cv.html">CV</a>
+        <a href="participant-information.html">Participate</a>
+      </nav>
+      <div class="footer-copy">© 2026 Hailey L Johnson</div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu   = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.site-nav')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      }
+    });
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => io.observe(el));
+  </script>
+
+<script src="scripts/cursor-tip.js"></script>
+</body>
+</html>

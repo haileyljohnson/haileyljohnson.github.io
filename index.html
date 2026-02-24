@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Hailey L Johnson — CS PhD Candidate at UW-Madison researching accessible technology for adults with Down syndrome."/>
+<title>Hailey L Johnson</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400;1,9..144,600&family=Nunito:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --moss:#3a5c3e; --moss-mid:#527a58; --moss-light:#7da882; --moss-pale:#cce0ce; --moss-mist:#eef5ee;
+  --cream:#faf7f2; --cream-dark:#f0ebe1; --sand:#e8dfc9;
+  --terra:#c4673a; --terra-pale:#f5e3d8;
+  --amber:#d4882a;
+  --text:#1e2f20; --text-mid:#405944; --text-soft:#738c76; --white:#ffffff;
+  --focus:#1a5fa8;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);line-height:1.7;min-height:100vh;}
+
+/* SKIP */
+.skip{position:absolute;top:-100%;left:1rem;z-index:9999;background:var(--moss);color:#fff;padding:.5rem 1rem;border-radius:0 0 4px 4px;font-size:.9rem;text-decoration:none;transition:top .2s;}
+.skip:focus{top:0;}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:3px;}
+
+/* NAV */
+.main-nav{position:sticky;top:0;z-index:200;background:rgba(250,247,242,0.93);backdrop-filter:blur(14px);border-bottom:1.5px solid var(--sand);padding:0 2.5rem;height:62px;display:flex;align-items:center;justify-content:space-between;}
+.nav-brand{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:500;color:var(--moss);text-decoration:none;}
+.nav-list{display:flex;gap:0;list-style:none;align-items:center;}
+.nav-list li{list-style:none;display:flex;align-items:center;}
+.nav-list li+li::before{content:'·';color:var(--text-soft);font-size:.9rem;padding:0 .15rem;}
+.nav-list a{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--text-mid);text-decoration:none;padding:.4rem .75rem;border-radius:4px;transition:background .18s,color .18s;}
+.nav-list a:hover{background:var(--moss-mist);color:var(--moss);}
+.nav-list a.active{background:var(--moss-pale);color:var(--moss);}
+
+/* HERO */
+.hero{max-width:1100px;margin:0 auto;padding:4rem 2.5rem 3rem;display:grid;grid-template-columns:220px 1fr;gap:3.5rem;align-items:center;}
+.photo-col{position:relative;display:flex;justify-content:center;}
+.photo-wrap{position:relative;width:210px;height:255px;animation:photoFloat 5.5s ease-in-out infinite;}
+.photo-ring{position:absolute;inset:0;border-radius:18px;background:var(--terra-pale);border:2.5px solid var(--terra);transform:translate(11px,11px);pointer-events:none;z-index:0;}
+.photo-frame{width:210px;height:255px;border-radius:18px;overflow:hidden;border:3px solid var(--white);position:relative;z-index:1;box-shadow:0 20px 50px rgba(58,92,62,.22);}
+.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
+@keyframes photoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);background:var(--terra-pale);padding:.3rem .85rem;border-radius:20px;margin-bottom:1rem;}
+.hero-name{font-family:'Fraunces',serif;font-size:clamp(2.4rem,5vw,3.8rem);font-weight:700;line-height:1.05;color:var(--moss);margin-bottom:.4rem;}
+.hero-name em{font-style:italic;color:var(--terra);}
+.hero-pro{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--text-soft);letter-spacing:.08em;margin-bottom:1.2rem;}
+.hero-bio{font-size:1.05rem;color:var(--text-mid);font-weight:300;line-height:1.75;max-width:52ch;margin-bottom:1.5rem;}
+.hero-bio a{color:var(--moss);font-weight:500;text-underline-offset:3px;}
+.pills{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.5rem;}
+.pill{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;padding:.28rem .72rem;border-radius:20px;background:var(--moss-mist);color:var(--moss-mid);border:1px solid var(--moss-pale);}
+.socials{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin-bottom:1.25rem;}
+.socials li{list-style:none;}
+.social{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--moss);text-decoration:none;padding:.35rem .8rem;border:1.5px solid var(--moss-pale);border-radius:6px;background:var(--white);transition:all .2s;}
+.social:hover{background:var(--moss-mist);border-color:var(--moss-mid);transform:translateY(-2px);box-shadow:0 4px 12px rgba(58,92,62,.1);}
+
+/* WAVE */
+.wave{line-height:0;overflow:hidden;}
+.wave-track{display:flex;width:200%;animation:wave-scroll 10s linear infinite;}
+.wave-track svg{width:50%;display:block;flex-shrink:0;}
+@keyframes wave-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.section{max-width:1100px;margin:0 auto;padding:3.5rem 2.5rem;}
+.bg-tinted{background:var(--cream-dark);}
+.s-tag{display:inline-block;font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:.4rem;}
+.s-title{font-family:'Fraunces',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:500;color:var(--moss);margin-bottom:1.5rem;line-height:1.2;}
+
+/* RESEARCH TEXT */
+.research-text { max-width: 100%; }
+.research-text p { font-size: 1rem; color: var(--text-mid); line-height: 1.85; font-weight: 300; }
+.research-text p + p { margin-top: 1rem; }
+.research-text strong { color: var(--moss); font-weight: 600; }
+.research-text ul { margin: .8rem 0 1rem 0; display: flex; flex-direction: column; gap: .55rem; list-style: none; }
+.research-text li { font-size: .97rem; color: var(--text-mid); line-height: 1.75; font-weight: 300; padding-left: 1.1rem; position: relative; list-style: none; }
+.research-text li::before { content: '›'; position: absolute; left: 0; color: var(--terra); font-weight: 700; }
+
+/* RESEARCH CARDS */
+.r-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;}
+.r-card{background:var(--white);border-radius:12px;padding:1.6rem;border:1.5px solid var(--moss-pale);transition:transform .22s,box-shadow .22s;position:relative;overflow:hidden;}
+.r-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--moss-light),var(--amber));transform:scaleX(0);transform-origin:left;transition:transform .3s;}
+.r-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(58,92,62,.12);}
+.r-card:hover::after{transform:scaleX(1);}
+.r-num{font-family:'Fraunces',serif;font-size:2.2rem;font-style:italic;color:var(--moss-pale);line-height:1;margin-bottom:.6rem;}
+.r-title{font-family:'Fraunces',serif;font-size:1rem;font-weight:500;color:var(--moss);margin-bottom:.6rem;line-height:1.35;}
+.r-desc{font-size:.88rem;color:var(--text-soft);line-height:1.65;}
+
+/* TEAM */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.9rem;}
+.t-card{background:var(--white);border-radius:10px;padding:1rem 1.2rem;border:1.5px solid var(--cream-dark);transition:border-color .2s,transform .2s;}
+.t-card:hover{border-color:var(--moss-pale);transform:translateY(-2px);}
+.t-name{font-weight:600;font-size:.9rem;color:var(--moss);margin-bottom:.1rem;}
+.t-name a{color:inherit;text-underline-offset:3px;}
+.t-role{font-size:.78rem;color:var(--text-soft);}
+.t-card--advisor{border-color:var(--terra);}
+.t-card--advisor:hover{border-color:var(--terra);}
+.t-card--advisor .t-role{color:var(--terra);font-weight:500;}
+.t-card--faculty{border-color:#a8c4de;}
+.t-card--faculty:hover{border-color:#3d6a90;}
+.t-card--faculty .t-role{color:#3d6a90;}
+.t-card--grad{border-color:var(--moss-pale);}
+.t-card--grad:hover{border-color:var(--moss-mid);}
+.t-card--grad .t-role{color:var(--moss-mid);}
+.t-card--undergrad{border-color:#e8d06a;}
+.t-card--undergrad:hover{border-color:#b89010;}
+.t-card--undergrad .t-role{color:#8a6c0c;}
+.team-groups{display:flex;flex-direction:column;gap:1rem;}
+.team-legend{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;margin-bottom:1.1rem;}
+.legend-item{display:flex;align-items:center;gap:.4rem;font-size:.74rem;color:var(--text-soft);font-family:'DM Mono',monospace;letter-spacing:.04em;text-transform:uppercase;}
+.legend-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+
+/* ═══════════════════════════════════
+   HOBBIES — NEW GALLERY LAYOUT
+   ═══════════════════════════════════ */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.hobby-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1.5px solid var(--cream-dark);
+  transition: transform .22s, box-shadow .22s;
+}
+.hobby-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(58,92,62,.11);
+}
+
+/* Header strip with emoji + title */
+.hobby-header {
+  padding: 1.1rem 1.4rem .8rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  border-bottom: 1px solid var(--cream-dark);
+}
+.hobby-emoji {
+  flex-shrink: 0;
+  width: 75px;
+  height: 75px;
+}
+.hobby-emoji img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+.hobby-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--moss);
+}
+
+/* PHOTO MOSAIC */
+.hobby-mosaic {
+  display: grid;
+  gap: 2px;
+  background: var(--cream-dark);
+}
+
+/* Parks: 3 columns top row + wide bottom */
+.mosaic-parks {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 130px 130px 130px;
+}
+.mosaic-parks .p1 { grid-column: 1; grid-row: 1; }
+.mosaic-parks .p2 { grid-column: 2; grid-row: 1; }
+.mosaic-parks .p3 { grid-column: 3; grid-row: 1; }
+.mosaic-parks .p4 { grid-column: 1; grid-row: 2; }
+.mosaic-parks .p5 { grid-column: 2; grid-row: 2; }
+.mosaic-parks .p6 { grid-column: 3; grid-row: 2; }
+.mosaic-parks .p7 { grid-column: 1; grid-row: 3; }
+.mosaic-parks .p8 { grid-column: 2; grid-row: 3; }
+.mosaic-parks .p9 { grid-column: 3; grid-row: 3; }
+
+/* Sewing: 3-col 1-row */
+.mosaic-sewing {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 220px;
+}
+.mosaic-sewing .s1 { grid-column: 1; grid-row: 1; }
+.mosaic-sewing .s2 { grid-column: 2; grid-row: 1; }
+.mosaic-sewing .s3 { grid-column: 3; grid-row: 1; }
+
+/* Baking: tall left + stacked right */
+.mosaic-baking {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 160px 160px;
+}
+.mosaic-baking .b1 { grid-column: 1; grid-row: 1 / -1; }
+.mosaic-baking .b2 { grid-column: 2; grid-row: 1; }
+.mosaic-baking .b3 { grid-column: 2; grid-row: 2; }
+
+/* Shared image style */
+.hobby-mosaic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .45s ease, filter .3s;
+}
+.hobby-card:hover .hobby-mosaic img {
+  transform: scale(1.04);
+  filter: brightness(1.04);
+}
+
+/* Caption */
+.hobby-body {
+  padding: .9rem 1.4rem 1.3rem;
+}
+.hobby-desc {
+  font-size: .87rem;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+/* Parks count badge */
+.park-count {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-family: 'DM Mono', monospace;
+  font-size: .62rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--moss-mid);
+  background: var(--moss-mist);
+  border: 1px solid var(--moss-pale);
+  padding: .2rem .6rem;
+  border-radius: 20px;
+  margin-top: .5rem;
+  display: inline-block;
+}
+
+/* Reading card — no images, bigger text feel */
+.hobby-card.reading .hobby-body {
+  padding: 1.2rem 1.4rem 1.4rem;
+}
+.bklist {
+  list-style: none;
+  margin-top: .6rem;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.bklist li {
+  font-size: .83rem;
+  color: var(--text-mid);
+  padding-left: .9rem;
+  position: relative;
+  font-style: italic;
+  line-height: 1.4;
+}
+.bklist li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--terra);
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* VISION */
+.vision{background:linear-gradient(135deg,var(--moss) 0%,#2d4a32 100%);border-radius:20px;padding:3rem 3.5rem;color:var(--white);position:relative;overflow:hidden;}
+.vision::before{content:'';position:absolute;top:-40%;right:-8%;width:480px;height:480px;background:radial-gradient(circle,rgba(255,255,255,.07) 0%,transparent 70%);border-radius:50%;}
+.vision .s-tag{color:var(--moss-pale);}
+.vision .s-title{color:var(--white);}
+.vision p{color:rgba(255,255,255,.82);font-size:1rem;line-height:1.8;}
+.vision p+p{margin-top:.9rem;}
+.vision a{color:var(--moss-pale);}
+
+/* FOOTER */
+footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
+.fi{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.2rem;}
+.fn{font-family:'Fraunces',serif;font-size:1.05rem;color:var(--white);}
+.fs{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--moss-light);margin-top:.15rem;letter-spacing:.06em;}
+.fl{display:flex;gap:1.2rem;flex-wrap:wrap;}
+.fl a{font-family:'DM Mono',monospace;font-size:.66rem;letter-spacing:.07em;text-transform:uppercase;color:var(--white);text-decoration:none;transition:color .18s;}
+.fl a:hover{color:var(--moss-pale);}
+.fc{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--moss-light);}
+
+/* REVEAL */
+.fu{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease;}
+.fu.animate{opacity:0;transform:translateY(20px);}
+.fu.animate.in{opacity:1;transform:none;}
+@keyframes showContent{to{opacity:1;transform:none;}}
+.fu{animation:showContent 0s 1.5s forwards;}
+
+/* RESPONSIVE */
+@media(max-width:860px){
+  .hobbies-grid { grid-template-columns: 1fr; }
+  .mosaic-parks { grid-template-rows: 110px 110px 110px; }
+}
+@media(max-width:760px){
+  .hero{grid-template-columns:1fr;gap:2rem;padding:2.5rem 1.5rem;}
+  .photo-col{justify-content:flex-start;}
+  .photo-ring{display:none;}
+  .photo-wrap{width:170px;height:205px;}
+  .photo-frame{width:170px;height:205px;}
+  .section{padding:2.5rem 1.5rem;}
+  .vision{padding:2rem 1.5rem;}
+  nav{padding:0 1.25rem;}
+  .nav-list a{font-size:.62rem;padding:.38rem .52rem;}
+  .bklist { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<nav class="main-nav" aria-label="Main navigation">
+  <a href="index.html" class="nav-brand">Hailey L Johnson</a>
+  <ul class="nav-list" role="list">
+    <a href="index.html" class="active" aria-current="page">About</a>
+    <a href="publications.html">Publications</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="cv.html">CV</a>
+    <a href="participant-information.html">Participate</a>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="photo-col fu">
+      <div class="photo-wrap">
+        <div class="photo-ring" aria-hidden="true"></div>
+        <div class="photo-frame">
+          <img src="images/IMG_7228.jpg" alt="Hailey L Johnson, smiling headshot"/>
+        </div>
+      </div>
+    </div>
+    <div class="hero-text">
+      <div class="hero-eyebrow fu">· PhD Candidate · UW-Madison ·</div>
+      <h1 class="hero-name fu">Hailey L Johnson</h1>
+      <p class="hero-pro fu">she / her</p>
+      <p class="hero-bio fu">
+        I'm a CS PhD student at the <strong>University of Wisconsin-Madison</strong> in the <a href="https://peopleandrobots.wisc.edu/" target="_blank" rel="noopener">People and Robots Lab</a>, advised by <a href="http://bilgemutlu.com/" target="_blank" rel="noopener">Dr. Bilge Mutlu</a>. I design and build supportive technologies for adults with Down syndrome — AR tools, tangible interfaces, and accessible systems that center the people who use them.
+      </p>
+
+      <nav aria-label="External profiles" class="fu">
+        <ul class="socials" role="list">
+          <li><a href="mailto:hljohnson22@wisc.edu" class="social">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=tfsaaJ0AAAAJ&hl=en&authuser=1" class="social" target="_blank" rel="noopener">Scholar</a></li>
+          <li><a href="https://orcid.org/0000-0003-1310-9948" class="social" target="_blank" rel="noopener">ORCID</a></li>
+          <li><a href="https://github.com/haileyljohnson" class="social" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/hailey-lynn-johnson/" class="social" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://twitter.com/@JohnsonHaileyL" class="social" target="_blank" rel="noopener">Twitter/X</a></li>
+        </ul>
+      </nav>
+
+      <div class="pills fu" role="list" aria-label="Research interests">
+        <span class="pill" role="listitem">HCI</span>
+        <span class="pill" role="listitem">Accessibility</span>
+        <span class="pill" role="listitem">Down syndrome</span>
+        <span class="pill" role="listitem">Cognitive disability</span>
+        <span class="pill" role="listitem">Technology design</span>
+        <span class="pill" role="listitem">Computer engineering</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave" aria-hidden="true"><div class="wave-track"><svg viewBox="0 0 1200 55" preserveAspectRatio="none" style="height:45px;"><path d="M0,28C200,56 400,0 600,28C800,56 1000,0 1200,28L1200,55L0,55Z" fill="#f0ebe1"/></svg><svg viewBox="0 0 1200 55" preserveAspectRatio="none" style="height:45px;"><path d="M0,28C200,56 400,0 600,28C800,56 1000,0 1200,28L1200,55L0,55Z" fill="#f0ebe1"/></svg></div></div>
+
+  <!-- RESEARCH -->
+  <div class="bg-tinted">
+  <div class="section">
+    <p class="s-tag fu">Research Journey</p>
+    <h2 class="s-title fu">My Research Journey</h2>
+    <div class="research-text fu">
+      <p>I am committed to creating inclusive, accessible technologies that enable adults with DS to achieve their personal and occupational goals. My research is guided by a collaborative, user-centered approach that includes building connections with the DS community, engaging in co-design studies, and conducting user studies of technology solutions. Through this process, I strive to bridge the gap between technological innovation and the lived experiences of adults with DS.</p>
+      <p>Highlights of my work include:</p>
+      <ul>
+        <li>Conducting qualitative interview studies with adults with DS, their parents, and experts to explore how technology is currently used within their daily lives and identify opportunities for technology support.</li>
+        <li>Completing a systematic scoping literature review to uncover gaps in existing research and inform the design of future assistive technologies.</li>
+        <li>Leading technology probe studies to prototype and refine innovative budgeting systems that integrate AR, gamification, and tangible interfaces.</li>
+        <li>Assessing computer security and privacy notifications to develop more accessible systems for adults with Intellectual and Developmental Disabilities (IDD).</li>
+      </ul>
+      <p>My goal is to ensure that every project centers the voices of adults with DS, designing technologies that are not only functional but also empowering and meaningful.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="wave" aria-hidden="true" style="transform:rotate(180deg);margin-top:-1px;"><div class="wave-track"><svg viewBox="0 0 1200 55" preserveAspectRatio="none" style="height:45px;"><path d="M0,28C200,56 400,0 600,28C800,56 1000,0 1200,28L1200,55L0,55Z" fill="#f0ebe1"/></svg><svg viewBox="0 0 1200 55" preserveAspectRatio="none" style="height:45px;"><path d="M0,28C200,56 400,0 600,28C800,56 1000,0 1200,28L1200,55L0,55Z" fill="#f0ebe1"/></svg></div></div>
+
+  <!-- TEAM -->
+  <div class="section">
+    <p class="s-tag fu">Collaborators</p>
+    <h2 class="s-title fu">The Team Around Me</h2>
+    <div class="team-legend fu" aria-label="Color key for team roles">
+      <span class="legend-item"><span class="legend-dot" style="background:var(--terra)"></span>Advisor</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#3d6a90"></span>Professor</span>
+      <span class="legend-item"><span class="legend-dot" style="background:var(--moss-mid)"></span>Graduate Student</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#b89010"></span>Undergrad Mentee</span>
+    </div>
+    <div class="team-groups">
+      <!-- Row 1: Advisor -->
+      <div class="team-grid">
+        <div class="t-card t-card--advisor fu"><div class="t-name"><a href="http://bilgemutlu.com/" target="_blank" rel="noopener">Dr. Bilge Mutlu</a></div><div class="t-role">Advisor · Professor, CS</div></div>
+      </div>
+      <!-- Row 2: Professors -->
+      <div class="team-grid">
+        <div class="t-card t-card--faculty fu"><div class="t-name"><a href="https://csd.wisc.edu/staff/sterling-audra/" target="_blank" rel="noopener">Dr. Audra Sterling</a></div><div class="t-role">Collaborator · Professor, CSD &amp; Waisman</div></div>
+        <div class="t-card t-card--faculty fu"><div class="t-name"><a href="https://pages.cs.wisc.edu/~chatterjee/" target="_blank" rel="noopener">Dr. Rahul Chatterjee</a></div><div class="t-role">Collaborator · Professor, CS</div></div>
+        <div class="t-card t-card--faculty fu"><div class="t-name"><a href="https://www.yuhangz.com/" target="_blank" rel="noopener">Dr. Yuhang Zhao</a></div><div class="t-role">Committee · Professor, CS</div></div>
+        <div class="t-card t-card--faculty fu"><div class="t-name"><a href="https://pages.discovery.wisc.edu/~kponto/" target="_blank" rel="noopener">Dr. Kevin Ponto</a></div><div class="t-role">Committee · Professor, Design Studies / WID</div></div>
+      </div>
+      <!-- Row 3: Graduate students -->
+      <div class="team-grid">
+        <div class="t-card t-card--grad fu"><div class="t-name"><a href="https://callie-kim.com/" target="_blank" rel="noopener">Callie Kim</a></div><div class="t-role">Graduate Collaborator</div></div>
+        <div class="t-card t-card--grad fu"><div class="t-name"><a href="https://nonnenkamp.com/" target="_blank" rel="noopener">Julia Nonnenkamp</a></div><div class="t-role">Graduate Collaborator</div></div>
+        <div class="t-card t-card--grad fu"><div class="t-name"><a href="http://heidispalitta.github.io" target="_blank" rel="noopener">Heidi Spalitta</a></div><div class="t-role">Graduate Mentee</div></div>
+      </div>
+      <!-- Row 4: Undergraduates -->
+      <div class="team-grid">
+        <div class="t-card t-card--undergrad fu"><div class="t-name"><a href="https://www.linkedin.com/in/aishwarya-borse/" target="_blank" rel="noopener">Aishwarya Borse</a></div><div class="t-role">Undergraduate Mentee</div></div>
+        <div class="t-card t-card--undergrad fu"><div class="t-name"><a href="https://www.linkedin.com/in/vibhrav-jha-4846a3275/" target="_blank" rel="noopener">Vibhrav Jha</a></div><div class="t-role">Undergraduate Mentee</div></div>
+        <div class="t-card t-card--undergrad fu"><div class="t-name"><a href="https://www.linkedin.com/in/harsh-nk" target="_blank" rel="noopener">Harsh Singh</a></div><div class="t-role">Undergraduate Mentee</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave" aria-hidden="true"><div class="wave-track"><svg viewBox="0 0 1200 55" preserveAspectRatio="none" style="height:45px;"><path d="M0,28C200,56 400,0 600,28C800,56 1000,0 1200,28L1200,55L0,55Z" fill="#f0ebe1"/></svg><svg viewBox="0 0 1200 55" preserveAspectRatio="none" style="height:45px;"><path d="M0,28C200,56 400,0 600,28C800,56 1000,0 1200,28L1200,55L0,55Z" fill="#f0ebe1"/></svg></div></div>
+
+  <!-- HOBBIES -->
+  <div class="bg-tinted">
+  <div class="section">
+    <p class="s-tag fu">Outside the Lab</p>
+    <h2 class="s-title fu">Hobbies &amp; Interests</h2>
+
+    <div class="hobbies-grid">
+
+      <!-- ── HIKING ── -->
+      <article class="hobby-card fu" aria-labelledby="hob-hiking">
+        <div class="hobby-header">
+          <span class="hobby-emoji"><img src="images/hike.png" alt="" /></span>
+          <h3 id="hob-hiking" class="hobby-title">Hiking + National Parks</h3>
+        </div>
+        <div class="hobby-mosaic mosaic-parks" role="img" aria-label="Photos from national park visits: Volcanoes, Acadia, Rocky Mountain, Mammoth Cave, Jordan Valley, Badlands, and Shenandoah">
+          <img class="p1" src="images/hobbies/parks-acadia.JPG"        alt="" loading="lazy"/>
+          <img class="p2" src="images/hobbies/parks-volcanoes1.jpg" alt="" loading="lazy"/>
+          <img class="p3" src="images/hobbies/parks-volcanoes2.JPG" alt="" loading="lazy"/>
+          <img class="p4" src="images/hobbies/parks-rocky.jpg"         alt="" loading="lazy"/>
+          <img class="p5" src="images/hobbies/parks-mammothcave.jpeg"  alt="" loading="lazy"/>
+          <img class="p6" src="images/hobbies/parks-jordanvalley.jpg"  alt="" loading="lazy"/>
+          <img class="p7" src="images/hobbies/parks-badlands.jpg"      alt="" loading="lazy"/>
+          <img class="p8" src="images/hobbies/parks-shenandoah.jpg" alt="" loading="lazy"/>
+          <img class="p9" src="images/hobbies/parks-acadia2.jpg"    alt="" loading="lazy"/>
+        </div>
+        <div class="hobby-body">
+          <p class="hobby-desc">Growing up in Washington made loving the outdoors feel inevitable. Hiking is one of my favorite ways to slow down and recharge. I'm gradually checking national parks off my list and already have the next few planned.</p>
+        </div>
+      </article>
+
+      <!-- ── READING ── -->
+      <article class="hobby-card reading fu" aria-labelledby="hob-reading">
+        <div class="hobby-header">
+          <span class="hobby-emoji"><img src="images/read.png" alt="" /></span>
+          <h3 id="hob-reading" class="hobby-title">Reading</h3>
+        </div>
+        <div class="hobby-body">
+          <p class="hobby-desc">I enjoy fantasy, magical realism, and classics, especially stories driven by strong characters and thoughtful reflections on identity, relationships, and meaning. A few favorites:</p>
+          <ul class="bklist" aria-label="Favorite books">
+            <li>Gideon the Ninth</li>
+            <li>Mrs. Dalloway</li>
+            <li>The Ocean at the End of the Lane</li>
+            <li>House in the Cerulean Sea</li>
+            <li>Tomorrow, and Tomorrow, and Tomorrow</li>
+            <li>Before the Coffee Gets Cold</li>
+            <li>Transcendent Kingdom</li>
+            <li>The Alchemist</li>
+            <li>1984</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ── SEWING ── -->
+      <article class="hobby-card fu" aria-labelledby="hob-sewing">
+        <div class="hobby-header">
+          <span class="hobby-emoji"><img src="images/sew.png" alt="" /></span>
+          <h3 id="hob-sewing" class="hobby-title">Sewing</h3>
+        </div>
+        <div class="hobby-mosaic mosaic-sewing" role="img" aria-label="Handmade sewing projects: tote bag, quilt, and fabric-covered frame">
+          <img class="s1" src="images/hobbies/sewing-tote.jpg"  alt="" loading="lazy"/>
+          <img class="s2" src="images/hobbies/sewing-quilt.jpg" alt="" loading="lazy"/>
+          <img class="s3" src="images/hobbies/sewing-frame.jpg" alt="" loading="lazy"/>
+        </div>
+        <div class="hobby-body">
+          <p class="hobby-desc">I picked up sewing during COVID as a creative outlet, and it quickly became a favorite way to unwind. Tote bags, quilts, dresses, pants, jackets, shirts — though my growing fabric stash suggests I may be more optimistic than realistic about future projects.</p>
+        </div>
+      </article>
+
+      <!-- ── BAKING ── -->
+      <article class="hobby-card fu" aria-labelledby="hob-baking">
+        <div class="hobby-header">
+          <span class="hobby-emoji"><img src="images/bake.png" alt="" /></span>
+          <h3 id="hob-baking" class="hobby-title">Baking</h3>
+        </div>
+        <div class="hobby-mosaic mosaic-baking" role="img" aria-label="Homemade bakes: cinnamon rolls, sourdough bread, and apple pie">
+          <img class="b1" src="images/hobbies/baking-bread.jpg" alt="" loading="lazy"/>
+          <img class="b2" src="images/hobbies/baking-rolls.JPG" alt="" loading="lazy"/>
+          <img class="b3" src="images/hobbies/baking-pie.jpg"   alt="" loading="lazy"/>
+        </div>
+        <div class="hobby-body">
+          <p class="hobby-desc">Taught by my mom, baking has been part of my life for as long as I can remember. Cakes, pies, cookies, sourdough — one of my favorite ways to relax and connect with others.</p>
+        </div>
+      </article>
+
+      
+
+    </div>
+  </div>
+  </div>
+
+  <div class="wave" aria-hidden="true" style="transform:rotate(180deg);margin-top:-1px;"><div class="wave-track"><svg viewBox="0 0 1200 55" preserveAspectRatio="none" style="height:45px;"><path d="M0,28C200,56 400,0 600,28C800,56 1000,0 1200,28L1200,55L0,55Z" fill="#f0ebe1"/></svg><svg viewBox="0 0 1200 55" preserveAspectRatio="none" style="height:45px;"><path d="M0,28C200,56 400,0 600,28C800,56 1000,0 1200,28L1200,55L0,55Z" fill="#f0ebe1"/></svg></div></div>
+
+  <!-- VISION -->
+  <div class="section">
+    <div class="vision fu">
+      <p class="s-tag">Looking Ahead</p>
+      <h2 class="s-title">Future Career Vision</h2>
+      <p>My long-term aspiration is to become a professor of Computer Science, with a lab that focuses on accessibility for individuals with cognitive disabilities. I hope to establish a research program that bridges academia and the community, with students volunteering alongside local organizations to foster meaningful connections.</p>
+      <p>My vision extends beyond academia. I want to contribute to evolving accessibility guidelines for industry and government, ensuring technology is inclusive for everyone. <a href="mailto:hljohnson22@wisc.edu">Reach out anytime</a> if you'd like to connect!</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="fi">
+    <div>
+      <div class="fn">Hailey L Johnson</div>
+      <div class="fs">Ph.D. Candidate · UW-Madison · Computer Sciences</div>
+    </div>
+    <nav class="fl" aria-label="Footer navigation">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="cv.html">CV</a>
+      <a href="participant-information.html">Participate</a>
+    </nav>
+    <div class="fc">© 2026 Hailey L Johnson</div>
+  </div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach((e,i) => {
+      if(e.isIntersecting){ setTimeout(() => e.target.classList.add('in'), i*80); obs.unobserve(e.target); }
+    });
+  },{threshold:0.15});
+  document.querySelectorAll('.fu').forEach(el => { el.classList.add('animate'); obs.observe(el); });
+</script>
+<script src="scripts/cursor-tip.js"></script>
