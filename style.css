@@ -16,12 +16,12 @@
   --green-mist:   #edf4ee;
   --sand:         #f6f1e9;
   --sand-dark:    #ede7db;
-  --amber:        #b87a3a;
+  --amber:        #8a5520;
   --amber-light:  #d4a06a;
   --amber-pale:   #f2e4ce;
   --text-dark:    #1c2e20;
   --text-mid:     #3a5540;
-  --text-light:   #6a8a70;
+  --text-light:   #4d6e53;
   --white:        #fefffe;
   --focus-ring:   #2a6db5;
 
@@ -205,7 +205,7 @@ body::after {
   font-size: 0.66rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--green-mid);
+  color: var(--green-rich);
   margin-bottom: 0.4rem;
 }
 
@@ -326,7 +326,7 @@ h2.section-title {
 .footer-sub {
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  color: var(--green-light);
+  color: var(--green-pale);
   margin-top: 0.2rem;
   letter-spacing: 0.06em;
 }
@@ -349,7 +349,7 @@ h2.section-title {
 .footer-copy {
   font-family: var(--font-mono);
   font-size: 0.62rem;
-  color: var(--green-light);
+  color: var(--green-pale);
 }
 
 /* ── PROJECT DETAIL PAGES ── */

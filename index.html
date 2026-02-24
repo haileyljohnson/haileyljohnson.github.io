@@ -11,9 +11,9 @@
 :root {
   --moss:#3a5c3e; --moss-mid:#527a58; --moss-light:#7da882; --moss-pale:#cce0ce; --moss-mist:#eef5ee;
   --cream:#faf7f2; --cream-dark:#f0ebe1; --sand:#e8dfc9;
-  --terra:#c4673a; --terra-pale:#f5e3d8;
+  --terra:#9e5028; --terra-pale:#f5e3d8;
   --amber:#d4882a;
-  --text:#1e2f20; --text-mid:#405944; --text-soft:#738c76; --white:#ffffff;
+  --text:#1e2f20; --text-mid:#405944; --text-soft:#5a7060; --white:#ffffff;
   --focus:#1a5fa8;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -50,7 +50,7 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);l
 .hero-bio{font-size:1.05rem;color:var(--text-mid);font-weight:300;line-height:1.75;max-width:52ch;margin-bottom:1.5rem;}
 .hero-bio a{color:var(--moss);font-weight:500;text-underline-offset:3px;}
 .pills{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.5rem;}
-.pill{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;padding:.28rem .72rem;border-radius:20px;background:var(--moss-mist);color:var(--moss-mid);border:1px solid var(--moss-pale);}
+.pill{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;padding:.28rem .72rem;border-radius:20px;background:var(--moss-mist);color:var(--moss);border:1px solid var(--moss-pale);}
 .socials{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin-bottom:1.25rem;}
 .socials li{list-style:none;}
 .social{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--moss);text-decoration:none;padding:.35rem .8rem;border:1.5px solid var(--moss-pale);border-radius:6px;background:var(--white);transition:all .2s;}
@@ -229,7 +229,7 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);l
   font-size: .62rem;
   letter-spacing: .07em;
   text-transform: uppercase;
-  color: var(--moss-mid);
+  color: var(--moss);
   background: var(--moss-mist);
   border: 1px solid var(--moss-pale);
   padding: .2rem .6rem;
@@ -279,11 +279,11 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);l
 footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
 .fi{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.2rem;}
 .fn{font-family:'Fraunces',serif;font-size:1.05rem;color:var(--white);}
-.fs{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--moss-light);margin-top:.15rem;letter-spacing:.06em;}
+.fs{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--moss-pale);margin-top:.15rem;letter-spacing:.06em;}
 .fl{display:flex;gap:1.2rem;flex-wrap:wrap;}
 .fl a{font-family:'DM Mono',monospace;font-size:.66rem;letter-spacing:.07em;text-transform:uppercase;color:var(--white);text-decoration:none;transition:color .18s;}
 .fl a:hover{color:var(--moss-pale);}
-.fc{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--moss-light);}
+.fc{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--moss-pale);}
 
 /* REVEAL */
 .fu{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease;}
@@ -343,7 +343,7 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
       <h1 class="hero-name fu">Hailey L Johnson</h1>
       <p class="hero-pro fu">she / her</p>
       <p class="hero-bio fu">
-        I'm a CS PhD student at the <strong>University of Wisconsin-Madison</strong> in the <a href="https://peopleandrobots.wisc.edu/" target="_blank" rel="noopener">People and Robots Lab</a>, advised by <a href="http://bilgemutlu.com/" target="_blank" rel="noopener">Dr. Bilge Mutlu</a>. I design and build supportive technologies for adults with Down syndrome — AR tools, tangible interfaces, and accessible systems that center the people who use them.
+        I'm a CS PhD student at the <strong>University of Wisconsin-Madison</strong> in the <a href="https://peopleandrobots.wisc.edu/" target="_blank" rel="noopener">People and Robots Lab</a>, advised by <a href="http://bilgemutlu.com/" target="_blank" rel="noopener">Prof. Bilge Mutlu</a>. I design and build supportive technologies for adults with Down syndrome.
       </p>
 
       <nav aria-label="External profiles" class="fu">
