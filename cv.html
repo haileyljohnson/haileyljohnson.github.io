@@ -46,6 +46,8 @@ body>nav{position:sticky;top:0;z-index:200;background:rgba(250,247,242,0.93);bac
 .nav-list a{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--text-mid);text-decoration:none;padding:.4rem .75rem;border-radius:4px;transition:background .18s,color .18s;}
 .nav-list a:hover{background:var(--moss-mist);color:var(--moss);}
 .nav-list a.active{background:var(--moss-pale);color:var(--moss);}
+.main-nav-toggle{display:none;background:none;border:1.5px solid var(--moss-pale);border-radius:4px;padding:.4rem .6rem;cursor:pointer;color:var(--moss);font-size:1.1rem;line-height:1;flex-shrink:0;}
+.main-nav-toggle:focus-visible{outline:3px solid var(--focus);outline-offset:2px;}
 
 /* PAGE HEADER */
 .page-head{background:linear-gradient(135deg,var(--moss) 0%,#2d4a32 100%);color:var(--white);padding:3.5rem 2.5rem 3rem;position:relative;overflow:hidden;}
@@ -155,9 +157,15 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
   .page-head{padding:2.5rem 1.5rem 2rem;}
   .cv-wrap{padding:2.5rem 1.5rem 4rem;}
 }
+@media(max-width:760px){
+  body>nav{padding:0 1.25rem;gap:.75rem;}
+  .main-nav-toggle{display:flex;align-items:center;}
+  .nav-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--cream);border-bottom:1.5px solid var(--sand);flex-direction:column;padding:.8rem 1.25rem;gap:.1rem;z-index:300;box-shadow:0 4px 16px rgba(58,92,62,.1);}
+  .nav-list.open{display:flex;}
+  .lang-toggle-text{display:none;}
+  .nav-list a{font-size:.8rem;padding:.55rem .9rem;}
+}
 @media(max-width:600px){
-  nav{padding:0 1.25rem;}
-  .nav-list a{font-size:.62rem;padding:.38rem .52rem;}
   .cv-entry{grid-template-columns:1fr;}
   .cv-entry-date{text-align:left;}
 }
@@ -169,7 +177,8 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
 
 <nav aria-label="Main navigation">
   <a href="index.html" class="nav-brand">Hailey L Johnson</a>
-  <ul class="nav-list" role="list">
+  <button class="main-nav-toggle" aria-expanded="false" aria-controls="cv-nav-list" aria-label="Toggle navigation menu">☰</button>
+  <ul class="nav-list" id="cv-nav-list" role="list">
     <li><a href="index.html">About</a></li>
     <li><a href="publications.html">Publications</a></li>
     <li><a href="portfolio.html">Portfolio</a></li>
@@ -570,6 +579,20 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     });
   }, {threshold:.06});
   document.querySelectorAll('.fu').forEach(el => obs.observe(el));
+  const mnToggle = document.querySelector('.main-nav-toggle');
+  const mnList = document.querySelector('.nav-list');
+  if (mnToggle && mnList) {
+    mnToggle.addEventListener('click', () => {
+      const open = mnList.classList.toggle('open');
+      mnToggle.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('nav')) {
+        mnList.classList.remove('open');
+        mnToggle.setAttribute('aria-expanded', false);
+      }
+    });
+  }
 </script>
 <script src="scripts/cursor-tip.js"></script>
 <script src="scripts/lang-toggle.js"></script>

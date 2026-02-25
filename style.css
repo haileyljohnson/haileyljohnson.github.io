@@ -496,7 +496,7 @@ h2.section-title {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 720px) {
-  .site-nav { padding: 0 1.25rem; }
+  .site-nav { padding: 0 1.25rem; gap: 0.75rem; }
   .nav-toggle { display: flex; align-items: center; }
   .nav-links {
     display: none;
@@ -513,6 +513,7 @@ h2.section-title {
   .nav-links.open { display: flex; }
   .nav-links a { font-size: 0.8rem; padding: 0.6rem 0.9rem; }
   .lang-toggle-btn { font-size: 0.58rem; padding: 0.22rem 0.5rem; }
+  .lang-toggle-text { display: none; }
   .page-wrapper { padding: 2.5rem 1.25rem 4rem; }
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
 }

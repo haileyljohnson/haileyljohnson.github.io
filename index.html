@@ -49,6 +49,8 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);l
 .nav-list a{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--text-mid);text-decoration:none;padding:.4rem .75rem;border-radius:4px;transition:background .18s,color .18s;}
 .nav-list a:hover{background:var(--moss-mist);color:var(--moss);}
 .nav-list a.active{background:var(--moss-pale);color:var(--moss);}
+.main-nav-toggle{display:none;background:none;border:1.5px solid var(--moss-pale);border-radius:4px;padding:.4rem .6rem;cursor:pointer;color:var(--moss);font-size:1.1rem;line-height:1;flex-shrink:0;}
+.main-nav-toggle:focus-visible{outline:3px solid var(--focus);outline-offset:2px;}
 
 /* HERO */
 .hero{max-width:1100px;margin:0 auto;padding:4rem 2.5rem 3rem;display:grid;grid-template-columns:220px 1fr;gap:3.5rem;align-items:center;}
@@ -320,8 +322,12 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
   .photo-frame{width:170px;height:205px;}
   .section{padding:2.5rem 1.5rem;}
   .vision{padding:2rem 1.5rem;}
-  nav{padding:0 1.25rem;}
-  .nav-list a{font-size:.62rem;padding:.38rem .52rem;}
+  .main-nav{padding:0 1.25rem;gap:.75rem;}
+  .main-nav-toggle{display:flex;align-items:center;}
+  .nav-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--cream);border-bottom:1.5px solid var(--sand);flex-direction:column;padding:.8rem 1.25rem;gap:.1rem;z-index:300;box-shadow:0 4px 16px rgba(58,92,62,.1);}
+  .nav-list.open{display:flex;}
+  .lang-toggle-text{display:none;}
+  .nav-list a{font-size:.8rem;padding:.55rem .9rem;}
   .bklist { grid-template-columns: 1fr; }
 }
 </style>
@@ -332,7 +338,8 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
 
 <nav class="main-nav" aria-label="Main navigation">
   <a href="index.html" class="nav-brand">Hailey L Johnson</a>
-  <ul class="nav-list" role="list">
+  <button class="main-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" aria-label="Toggle navigation menu">☰</button>
+  <ul class="nav-list" id="main-nav-list" role="list">
     <a href="index.html" class="active" aria-current="page">About</a>
     <a href="publications.html">Publications</a>
     <a href="portfolio.html">Portfolio</a>
@@ -592,6 +599,20 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     });
   },{threshold:0.15});
   document.querySelectorAll('.fu').forEach(el => { el.classList.add('animate'); obs.observe(el); });
+  const mnToggle = document.querySelector('.main-nav-toggle');
+  const mnList = document.querySelector('.nav-list');
+  if (mnToggle && mnList) {
+    mnToggle.addEventListener('click', () => {
+      const open = mnList.classList.toggle('open');
+      mnToggle.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.main-nav')) {
+        mnList.classList.remove('open');
+        mnToggle.setAttribute('aria-expanded', false);
+      }
+    });
+  }
 </script>
 <script src="scripts/cursor-tip.js"></script>
 <script src="scripts/lang-toggle.js"></script>
