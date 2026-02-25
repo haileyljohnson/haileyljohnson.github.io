@@ -322,12 +322,14 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
   .photo-frame{width:170px;height:205px;}
   .section{padding:2.5rem 1.5rem;}
   .vision{padding:2rem 1.5rem;}
-  .main-nav{padding:0 1.25rem;gap:.75rem;}
-  .main-nav-toggle{display:flex;align-items:center;}
-  .nav-list{display:none;position:absolute;top:62px;left:0;right:0;background:var(--cream);border-bottom:1.5px solid var(--sand);flex-direction:column;padding:.8rem 1.25rem;gap:.1rem;z-index:300;box-shadow:0 4px 16px rgba(58,92,62,.1);}
-  .nav-list.open{display:flex;}
-  .lang-toggle-text{display:none;}
-  .nav-list a{font-size:.8rem;padding:.55rem .9rem;}
+  .main-nav{padding:0;height:auto;flex-wrap:wrap;gap:0;}
+  .nav-brand{height:62px;padding:0 1.25rem;display:flex;align-items:center;}
+  .main-nav-toggle{display:none;}
+  .nav-list{display:flex;flex:1;height:62px;align-items:center;flex-wrap:nowrap;gap:0;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;position:static;background:transparent;border:none;box-shadow:none;padding:0;}
+  .nav-list::-webkit-scrollbar{display:none;}
+  .nav-list a{font-size:.7rem;padding:.45rem .65rem;}
+  .lang-toggle-btn{flex:0 0 100%;width:100%;border-radius:0;border:none;border-top:1.5px solid var(--sand);padding:.45rem 1.25rem;justify-content:center;font-size:.65rem;}
+  .lang-toggle-text{display:inline;}
   .bklist { grid-template-columns: 1fr; }
 }
 </style>
@@ -338,8 +340,7 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
 
 <nav class="main-nav" aria-label="Main navigation">
   <a href="index.html" class="nav-brand">Hailey L Johnson</a>
-  <button class="main-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" aria-label="Toggle navigation menu">☰</button>
-  <ul class="nav-list" id="main-nav-list" role="list">
+  <ul class="nav-list" role="list">
     <a href="index.html" class="active" aria-current="page">About</a>
     <a href="publications.html">Publications</a>
     <a href="portfolio.html">Portfolio</a>
