@@ -496,30 +496,27 @@ h2.section-title {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 720px) {
-  /* Nav: 2-row sticky layout — row 1: brand + scrollable links, row 2: lang toggle */
+  /* Nav: hide site name, wrap all tabs into rows, lang toggle pinned below */
   .site-nav { padding: 0; height: auto; flex-wrap: wrap; gap: 0; }
-  .nav-home { height: var(--nav-h); padding: 0 1.25rem; display: flex; align-items: center; }
+  .nav-home { display: none; }
   .nav-toggle { display: none; }
   .nav-links {
     display: flex;
-    flex: 1;
-    height: var(--nav-h);
-    align-items: center;
-    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
     gap: 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    overflow: visible;
     position: static;
     background: transparent;
     border: none;
     box-shadow: none;
     padding: 0;
+    border-bottom: 1px solid var(--green-pale);
   }
-  .nav-links::-webkit-scrollbar { display: none; }
-  .nav-links a { font-size: 0.72rem; padding: 0.45rem 0.65rem; }
-  /* Lang toggle: second sticky row, full width */
+  .nav-links li { display: flex; flex: 1 1 auto; }
+  .nav-links a { flex: 1; text-align: center; font-size: 0.7rem; padding: 0.55rem 0.4rem; white-space: nowrap; }
+  /* Lang toggle: sticky row pinned below the tabs */
   .lang-toggle-btn {
     flex: 0 0 100%;
     width: 100%;
