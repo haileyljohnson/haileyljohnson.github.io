@@ -495,7 +495,7 @@ h2.section-title {
 }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 720px) {
+@media (max-width: 760px) {
   /* Nav: hide site name, wrap all tabs into rows, lang toggle pinned below */
   .site-nav { padding: 0; height: auto; flex-wrap: wrap; gap: 0; }
   .nav-home { display: none; }
