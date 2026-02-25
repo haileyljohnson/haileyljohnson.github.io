@@ -1,4 +1,7 @@
 (function () {
+  // Skip on touch/mobile devices that don't support hover
+  if (window.matchMedia('(hover: none)').matches) return;
+
   // Inject tooltip styles
   const s = document.createElement('style');
   s.textContent =
