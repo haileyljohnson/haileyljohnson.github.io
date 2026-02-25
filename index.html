@@ -31,8 +31,13 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);l
 .lang-toggle-btn[aria-checked="true"]{background:var(--moss);color:var(--white);border-color:var(--moss);}
 .lang-toggle-track{width:24px;height:13px;border-radius:7px;background:currentColor;opacity:.35;position:relative;flex-shrink:0;transition:opacity .18s;}
 .lang-toggle-btn[aria-checked="true"] .lang-toggle-track{opacity:.7;}
-.lang-toggle-thumb{position:absolute;top:2px;left:2px;width:9px;height:9px;border-radius:50%;background:white;transition:left .18s;box-shadow:0 1px 3px rgba(0,0,0,.25);}
-.lang-toggle-btn[aria-checked="true"] .lang-toggle-thumb{left:13px;}
+.lang-toggle-thumb{position:absolute;top:2px;left:13px;width:9px;height:9px;border-radius:50%;background:white;transition:left .18s;box-shadow:0 1px 3px rgba(0,0,0,.25);}
+.lang-toggle-btn[aria-checked="true"] .lang-toggle-thumb{left:2px;}
+.lang-toggle-label{transition:opacity .18s;}
+.lang-toggle-detailed{opacity:1;}
+.lang-toggle-simple{opacity:0.45;}
+.lang-toggle-btn[aria-checked="true"] .lang-toggle-detailed{opacity:0.45;}
+.lang-toggle-btn[aria-checked="true"] .lang-toggle-simple{opacity:1;}
 @media(max-width:760px){.lang-toggle-btn{font-size:.58rem;padding:.22rem .5rem;}}
 
 /* SKIP */
@@ -328,7 +333,7 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
   .nav-list{display:flex;width:100%;height:auto;flex-wrap:wrap;gap:0;overflow:visible;position:static;background:transparent;border:none;box-shadow:none;padding:0;border-bottom:1.5px solid var(--sand);}
   .nav-list a{flex:1 1 auto;text-align:center;font-size:.7rem;padding:.55rem .4rem;white-space:nowrap;}
   .lang-toggle-btn{flex:0 0 100%;width:100%;border-radius:0;border:none;border-top:1.5px solid var(--sand);padding:.45rem 1.25rem;justify-content:center;font-size:.65rem;}
-  .lang-toggle-text{display:inline;}
+  .lang-toggle-label{display:inline;}
   .bklist { grid-template-columns: 1fr; }
 }
 </style>
@@ -346,9 +351,10 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     <a href="cv.html">CV</a>
     <a href="participant-information.html">Participate</a>
   </ul>
-  <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle plain language mode">
+  <button id="lang-toggle" class="lang-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle between simple and detailed language">
+    <span class="lang-toggle-label lang-toggle-simple">Simple</span>
     <span class="lang-toggle-track"><span class="lang-toggle-thumb"></span></span>
-    <span class="lang-toggle-text">Plain Language</span>
+    <span class="lang-toggle-label lang-toggle-detailed">Detailed</span>
   </button>
 </nav>
 
