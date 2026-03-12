@@ -99,6 +99,16 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text);l
 .research-text li { font-size: .97rem; color: var(--text-mid); line-height: 1.75; font-weight: 300; padding-left: 1.1rem; position: relative; list-style: none; }
 .research-text li::before { content: '›'; position: absolute; left: 0; color: var(--terra); font-weight: 700; }
 
+/* PRESS CALLOUT */
+.press-callout{margin-top:1.5rem;}
+.press-link{display:flex;align-items:center;gap:1rem;background:var(--white);border:1.5px solid var(--moss-pale);border-radius:10px;padding:.75rem 1.2rem .75rem .75rem;text-decoration:none;transition:border-color .2s,box-shadow .2s;}
+.press-img{width:90px;height:68px;object-fit:cover;border-radius:6px;flex-shrink:0;}
+.press-link:hover{border-color:var(--moss-mid);box-shadow:0 4px 16px rgba(58,92,62,.1);}
+.press-badge{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);background:var(--terra-pale);padding:.2rem .55rem;border-radius:20px;white-space:nowrap;flex-shrink:0;}
+.press-title{font-size:.92rem;color:var(--moss);font-weight:500;line-height:1.4;}
+.press-source{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--text-soft);letter-spacing:.04em;margin-top:.15rem;}
+.press-arrow{font-size:1rem;color:var(--moss-light);flex-shrink:0;margin-left:auto;padding-left:.5rem;}
+
 /* RESEARCH CARDS */
 .r-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;}
 .r-card{background:var(--white);border-radius:12px;padding:1.6rem;border:1.5px solid var(--moss-pale);transition:transform .22s,box-shadow .22s;position:relative;overflow:hidden;}
@@ -425,6 +435,16 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
       </ul>
       <p><span class="lang-academic">My goal is to ensure that every project centers the voices of adults with DS, designing technologies that are not only functional but also empowering and meaningful.</span>
         <span class="lang-simple">In every project, the people I'm designing for have a real say. The goal isn't just technology that works, it's technology that actually matters to the people using it.</span></p>
+      <div class="press-callout fu">
+        <a href="https://www.cs.wisc.edu/2025/04/15/hailey-johnson-phd-research-adults-down-syndrome/" class="press-link" target="_blank" rel="noopener">
+          <img src="images/Adam.jpeg" alt="Hailey and her brother Adam in a car smiling at the camera" class="press-img" aria-hidden="true" loading="lazy"/>
+          <div>
+            <div class="press-title">In the People &amp; Robots Lab, Hailey Johnson PhDx&#8217;26 is finding her own path</div>
+            <div class="press-source">UW–Madison Computer Sciences</div>
+          </div>
+          <span class="press-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
   </div>
   </div>
