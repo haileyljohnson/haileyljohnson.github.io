@@ -143,8 +143,9 @@ body>nav{position:sticky;top:0;z-index:200;background:rgba(250,247,242,0.93);bac
 .volunteer-badge{display:inline-flex;align-items:center;gap:.4rem;background:var(--terra-pale);color:var(--terra);font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;padding:.25rem .65rem;border-radius:20px;margin-bottom:.5rem;}
 
 /* REVEAL */
-.fu{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
-.fu.in{opacity:1;transform:none;}
+.fu{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;will-change:transform,opacity;}
+.fu.in{opacity:1;transform:none;will-change:auto;}
+@media(prefers-reduced-motion:reduce){.fu,.fu.in{opacity:1;transform:none;transition:none;will-change:auto;}}
 
 /* FOOTER */
 footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
@@ -230,7 +231,7 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     <!-- EDUCATION -->
     <section class="cv-section fu" aria-labelledby="edu-heading">
       <div class="cv-section-head">
-        <div class="cv-section-icon icon-amber" aria-hidden="true"><img src="images/education.png" alt="" width="75" height="75" style="object-fit:contain;" /></div>
+        <div class="cv-section-icon icon-amber" aria-hidden="true"><img loading="lazy" src="images/education.png" alt="" width="75" height="75" style="object-fit:contain;" /></div>
         <h2 id="edu-heading" class="cv-section-title">Education</h2>
       </div>
 
@@ -257,7 +258,7 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     <!-- RESEARCH EXPERIENCE -->
     <section class="cv-section fu" aria-labelledby="res-heading">
       <div class="cv-section-head">
-        <div class="cv-section-icon icon-amber" aria-hidden="true"><img src="images/research.png" alt="" width="75" height="75" style="object-fit:contain;" /></div>
+        <div class="cv-section-icon icon-amber" aria-hidden="true"><img loading="lazy" src="images/research.png" alt="" width="75" height="75" style="object-fit:contain;" /></div>
         <h2 id="res-heading" class="cv-section-title">Research Experience</h2>
       </div>
 
@@ -307,7 +308,7 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     <!-- WORK EXPERIENCE -->
     <section class="cv-section fu" aria-labelledby="work-heading">
       <div class="cv-section-head">
-        <div class="cv-section-icon icon-amber" aria-hidden="true"><img src="images/work.png" alt="" width="75" height="75" style="object-fit:contain;" /></div>
+        <div class="cv-section-icon icon-amber" aria-hidden="true"><img loading="lazy" src="images/work.png" alt="" width="75" height="75" style="object-fit:contain;" /></div>
         <h2 id="work-heading" class="cv-section-title">Work Experience</h2>
       </div>
 
@@ -391,7 +392,7 @@ footer{background:var(--moss);color:var(--moss-pale);padding:2.5rem;}
     <!-- TEACHING -->
     <section class="cv-section fu" aria-labelledby="teach-heading">
       <div class="cv-section-head">
-        <div class="cv-section-icon icon-amber" aria-hidden="true"><img src="images/teaching.png" alt="" width="75" height="75" style="object-fit:contain;" /></div>
+        <div class="cv-section-icon icon-amber" aria-hidden="true"><img loading="lazy" src="images/teaching.png" alt="" width="75" height="75" style="object-fit:contain;" /></div>
         <h2 id="teach-heading" class="cv-section-title">Teaching Experience</h2>
       </div>
 

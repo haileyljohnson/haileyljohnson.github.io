@@ -359,8 +359,13 @@ h2.section-title {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.65s ease, transform 0.65s ease;
+  will-change: transform, opacity;
 }
-.reveal.visible { opacity: 1; transform: none; }
+.reveal.visible { opacity: 1; transform: none; will-change: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; will-change: auto; }
+}
 
 /* ── FOOTER ── */
 .site-footer {
