@@ -121,8 +121,53 @@
       color: var(--green-light);
     }
 
+    .portfolio-section + .portfolio-section {
+      margin-top: 3rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--green-pale);
+    }
+
+    .portfolio-section-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.35rem;
+    }
+
+    .portfolio-section-heading {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--green-deep);
+      margin-bottom: 1.5rem;
+    }
+
+    .poster-flyer {
+      display: block;
+      border: 1px solid var(--green-pale);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      text-decoration: none;
+      transition: box-shadow 0.2s;
+    }
+    .poster-flyer:hover { box-shadow: var(--shadow-md); }
+    .poster-flyer img { width: 100%; display: block; }
+    .poster-flyer-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      text-align: center;
+      padding: 0.4rem;
+      background: var(--sand);
+    }
+
     @media (max-width: 680px) {
       .portfolio-grid { grid-template-columns: 1fr; }
+      .poster-flyer { max-width: 100%; }
     }
   </style>
 </head>
@@ -153,145 +198,192 @@
       <header class="page-header reveal">
         <p class="page-eyebrow">Research Projects</p>
         <h1 class="page-title">Portfolio</h1>
-        <p class="page-subtitle"><span class="lang-academic">An overview of my research projects, from qualitative studies to technology probes and system design.</span><span class="lang-simple">An overview of the projects I've worked on, from talking with people about their experiences to building and testing new technology tools.</span></p>
+        <p class="page-subtitle"><span class="lang-academic">An overview of my research projects, from qualitative studies to technology probes and system design.</span><span class="lang-simple">The projects I've worked on, from talking with people about their experiences to building and testing new technology tools.</span></p>
       </header>
 
-      <div class="portfolio-grid" role="list">
+      <!-- ── DOWN SYNDROME & IDD ── -->
+      <section class="portfolio-section" aria-labelledby="idd-heading">
+        <p class="portfolio-section-eyebrow">Population Focus</p>
+        <h2 id="idd-heading" class="portfolio-section-heading">
+          <span>Adults with Down Syndrome &amp; Intellectual and Developmental Disability</span>
+        </h2>
+        <div class="portfolio-grid" role="list">
 
-        <a href="projects/security-privacy.html" class="project-card reveal" role="listitem"
-           aria-label="Security and Privacy Notifications — IDD project">
-          <div class="project-img-wrap">
-            <img src="images/SandP.png"
-                 alt="Graphic representing security and privacy notification study" />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-hidden="true">
-              <span class="badge badge-green">In Progress</span>
-              <span class="badge badge-amber">Security &amp; Privacy</span>
+          <a href="projects/security-privacy.html" class="project-card reveal" role="listitem"
+             aria-label="Security and Privacy Notifications — IDD project">
+            <div class="project-img-wrap">
+              <img src="images/SandP.png"
+                   alt="Graphic representing security and privacy notification study" />
             </div>
-            <h2 class="project-title">"I'm trying not to get hacked:" How Adults with IDD Navigate Security and Privacy Notifications</h2>
-            <p class="project-desc"><span class="lang-academic">Exploring how adults with Intellectual and Developmental Disabilities encounter and respond to computer security and privacy notifications, and designing more accessible alternatives.</span><span class="lang-simple">Studying how adults with intellectual and developmental disabilities use security and privacy warnings on computers and phones to make other options.</span></p>
-            <span class="project-cta" aria-hidden="true">View project →</span>
-          </div>
+            <div class="project-body">
+              <div class="project-tags" aria-hidden="true">
+                <span class="badge badge-green">In Progress</span>
+                <span class="badge badge-amber">Security &amp; Privacy</span>
+              </div>
+              <h3 class="project-title">"I'm trying not to get hacked:" How Adults with IDD Navigate Security and Privacy Notifications</h3>
+              <p class="project-desc"><span class="lang-academic">Exploring how adults with Intellectual and Developmental Disabilities encounter and respond to computer security and privacy notifications, and designing more accessible alternatives.</span><span class="lang-simple">Studying how adults with intellectual and developmental disabilities use security and privacy warnings on computers and phones to make other options.</span></p>
+              <span class="project-cta" aria-hidden="true">View project →</span>
+            </div>
+          </a>
+
+          <a href="projects/money-management.html" class="project-card reveal" role="listitem"
+             aria-label="Money Management Technology Probe Study">
+            <div class="project-img-wrap">
+              <img src="images/TechProbe.png"
+                   alt="Technology probe study materials for money management" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags" aria-hidden="true">
+                <span class="badge badge-done">Complete</span>
+                <span class="badge badge-green">Published · CHI 2026</span>
+              </div>
+              <h3 class="project-title">Supporting Money Management among Adults with Down Syndrome: A Multi-Technology Probe Study</h3>
+              <p class="project-desc"><span class="lang-academic">Prototyped and evaluated budgeting systems integrating augmented reality, gamification, and tangible interfaces in collaboration with adults with DS.</span><span class="lang-simple">Built and tested three budgeting tools (e.g., a tablet game, a camera-based money app, and a hands-on device) working directly with adults with Down syndrome to shape the designs.</span></p>
+              <span class="project-cta" aria-hidden="true">View project →</span>
+            </div>
+          </a>
+
+          <a href="projects/survey.html" class="project-card reveal" role="listitem"
+             aria-label="National Technology Usage Survey Study">
+            <div class="project-img-wrap">
+              <img src="images/SurveyTeaserFig.png"
+                   alt="Survey study teaser figure" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags" aria-hidden="true">
+                <span class="badge badge-done">Complete</span>
+                <span class="badge badge-green">Survey · Qualtrics</span>
+              </div>
+              <h3 class="project-title">National Technology Usage Survey Study with Adults with Down Syndrome</h3>
+              <p class="project-desc"><span class="lang-academic">A national online survey study investigating the technology usage patterns and preferences of adults with DS across the United States.</span><span class="lang-simple">An online survey across the U.S. asking adults with Down syndrome how they use technology, what they like, and what they find challenging.</span></p>
+              <span class="project-cta" aria-hidden="true">View project →</span>
+            </div>
+          </a>
+
+          <a href="projects/prisma-review.html" class="project-card reveal" role="listitem"
+             aria-label="PRISMA Literature Review on Assistive Technologies">
+            <div class="project-img-wrap">
+              <img src="images/RQModel.png"
+                   alt="Research question model diagram from literature review" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags" aria-hidden="true">
+                <span class="badge badge-done">Complete</span>
+                <span class="badge badge-amber">Published · TACCESS 2025</span>
+              </div>
+              <h3 class="project-title">PRISMA Literature Review on Assistive Technologies with Adults with Down Syndrome</h3>
+              <p class="project-desc"><span class="lang-academic">A systematic scoping review of 20 papers, identifying gaps in accessible technology research for adults with DS and informing future design directions.</span><span class="lang-simple">A structured review of 20 published research papers to understand what technology tools have been built for adults with Down syndrome and where there's still important work to do.</span></p>
+              <span class="project-cta" aria-hidden="true">View project →</span>
+            </div>
+          </a>
+
+          <a href="projects/exploratory-study.html" class="project-card reveal" role="listitem"
+             aria-label="Exploratory Technology Study with Adults with Down Syndrome">
+            <div class="project-img-wrap">
+              <img src="images/TeaserFig.png"
+                   alt="Teaser figure from exploratory technology study" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags" aria-hidden="true">
+                <span class="badge badge-done">Complete</span>
+                <span class="badge badge-amber">Published · CHI 2024</span>
+              </div>
+              <h3 class="project-title">Exploratory Technology Study with Adults with Down Syndrome</h3>
+              <p class="project-desc"><span class="lang-academic">Qualitative interviews with adults with DS, their parents, and domain experts to understand current technology use and identify unmet needs.</span><span class="lang-simple">In-depth conversations with adults with Down syndrome, their families, and specialists to learn how they use technology today and what tools would actually help them.</span></p>
+              <span class="project-cta" aria-hidden="true">View project →</span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- ── TRAUMATIC BRAIN INJURY ── -->
+      <section class="portfolio-section" aria-labelledby="tbi-heading">
+        <p class="portfolio-section-eyebrow">Population Focus</p>
+        <h2 id="tbi-heading" class="portfolio-section-heading">
+          <span>Adults with Traumatic Brain Injury</span>
+        </h2>
+        <div class="portfolio-grid" role="list">
+
+          <a href="projects/tbi-social-media.html" class="project-card reveal" role="listitem"
+             aria-label="Supporting individuals with TBI through digital aids for social media">
+            <div class="project-img-placeholder" aria-hidden="true">Image coming soon</div>
+            <div class="project-body">
+              <div class="project-tags" aria-hidden="true">
+                <span class="badge badge-done">Complete</span>
+                <span class="badge badge-green">Under Review</span>
+              </div>
+              <h3 class="project-title">Supporting Individuals with TBI Through the Use of Digital Aids for Social Media: An In-the-Wild Study</h3>
+              <p class="project-desc"><span class="lang-academic">An in-the-wild study examining how adults with traumatic brain injury use digital aids to navigate social media platforms in everyday life.</span><span class="lang-simple">A real-world study following adults with brain injuries as they used digital tools to navigate social media in their everyday lives.</span></p>
+              <span class="project-cta" aria-hidden="true">View project →</span>
+            </div>
+          </a>
+
+          <a href="projects/smart-tbi.html" class="project-card reveal" role="listitem"
+             aria-label="SMART-TBI: Social Media Accessibility and Rehabilitation Toolkit">
+            <div class="project-img-wrap">
+              <img src="images/smarttbi.png"
+                   alt="person looking at a computer with 5 social media aids around the screen to choose." />
+            </div>
+            <div class="project-body">
+              <div class="project-tags" aria-hidden="true">
+                <span class="badge badge-done">Complete</span>
+                <span class="badge badge-amber">Published · ASSETS 2024</span>
+              </div>
+              <h3 class="project-title">SMART-TBI: Design and Evaluation of the Social Media Accessibility and Rehabilitation Toolkit for Users with TBI</h3>
+              <p class="project-desc"><span class="lang-academic">Design and evaluation of a toolkit supporting accessible and rehabilitative social media use for adults with traumatic brain injury.</span><span class="lang-simple">Building and testing a set of tools to help adults with brain injuries use social media more safely and effectively as part of their recovery.</span></p>
+              <span class="project-cta" aria-hidden="true">View project →</span>
+            </div>
+          </a>
+
+          <a href="projects/tbi-ca.html" class="project-card reveal" role="listitem"
+             aria-label="Conversational Agents for people with TBI">
+            <div class="project-img-wrap">
+              <img src="images/TBI-CA_Teaser.png"
+                   alt="Teaser figure from conversational agents TBI study" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags" aria-hidden="true">
+                <span class="badge badge-done">Complete</span>
+                <span class="badge badge-amber">Published · ASSETS 2023</span>
+              </div>
+              <h3 class="project-title">Conversational Agents for People with Traumatic Brain Injury (TBI)</h3>
+              <p class="project-desc"><span class="lang-academic">A four-week at-home study giving nine adults with TBI a conversational agent, investigating daily use patterns, challenges, and design requirements.</span><span class="lang-simple">A four-week study where nine adults with brain injuries used a voice assistant at home, so we could learn how they used it, what was difficult, and what would make it better.</span></p>
+              <span class="project-cta" aria-hidden="true">View project →</span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- ── RESEARCH POSTERS ── -->
+      <section class="portfolio-section" aria-labelledby="posters-heading">
+        <p class="portfolio-section-eyebrow">Research Artifacts</p>
+        <h2 id="posters-heading" class="portfolio-section-heading">Posters</h2>
+
+        <div class="portfolio-grid">
+
+        <a href="research_supp/Designing_Accessible_Tech_DS_Poster.pdf"
+           class="poster-flyer reveal"
+           target="_blank" rel="noopener"
+           aria-label="View research poster PDF: Designing Accessible Technology for Adults with Down Syndrome (opens in new tab)">
+          <img src="research_supp/Designing_Accessible_Tech_DS_Poster.pdf.png"
+               alt="Preview of research poster: Designing Accessible Technology for Adults with Down Syndrome" />
+          <div class="poster-flyer-label" aria-hidden="true">View poster PDF ↗</div>
         </a>
 
-        <a href="projects/money-management.html" class="project-card reveal" role="listitem"
-           aria-label="Money Management Technology Probe Study">
-          <div class="project-img-wrap">
-            <img src="images/TechProbe.png"
-                 alt="Technology probe study materials for money management" />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-hidden="true">
-              <span class="badge badge-done">Complete</span>
-              <span class="badge badge-green">Published · CHI 2026</span>
-            </div>
-            <h2 class="project-title">Supporting Money Management among Adults with Down Syndrome: A Multi-Technology Probe Study</h2>
-            <p class="project-desc"><span class="lang-academic">Prototyped and evaluated budgeting systems integrating augmented reality, gamification, and tangible interfaces in collaboration with adults with DS.</span><span class="lang-simple">Built and tested three budgeting tools (e.g., a tablet game, a camera-based money app, and a hands-on device) working directly with adults with Down syndrome to shape the designs.</span></p>
-            <span class="project-cta" aria-hidden="true">View project →</span>
-          </div>
+        <a href="research_supp/ASSETS2024_Poster_Johnson.pdf"
+           class="poster-flyer reveal"
+           target="_blank" rel="noopener"
+           aria-label="View ASSETS 2024 research poster PDF (opens in new tab)">
+          <img src="research_supp/ASSETS2024_Poster_Johnson.pdf.png"
+               alt="Preview of ASSETS 2024 research poster by Hailey Johnson" />
+          <div class="poster-flyer-label" aria-hidden="true">View poster PDF ↗</div>
         </a>
 
-        <a href="projects/survey.html" class="project-card reveal" role="listitem"
-           aria-label="National Technology Usage Survey Study">
-          <div class="project-img-wrap">
-            <img src="images/SurveyTeaserFig.png"
-                 alt="Survey study teaser figure" />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-hidden="true">
-              <span class="badge badge-done">Complete</span>
-              <span class="badge badge-green">Survey · Qualtrics</span>
-            </div>
-            <h2 class="project-title">National Technology Usage Survey Study with Adults with Down Syndrome</h2>
-            <p class="project-desc"><span class="lang-academic">A national online survey study investigating the technology usage patterns and preferences of adults with DS across the United States.</span><span class="lang-simple">An online survey across the U.S. asking adults with Down syndrome how they use technology, what they like, and what they find challenging.</span></p>
-            <span class="project-cta" aria-hidden="true">View project →</span>
-          </div>
-        </a>
+        </div>
 
-        <a href="projects/prisma-review.html" class="project-card reveal" role="listitem"
-           aria-label="PRISMA Literature Review on Assistive Technologies">
-          <div class="project-img-wrap">
-            <img src="images/RQModel.png"
-                 alt="Research question model diagram from literature review" />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-hidden="true">
-              <span class="badge badge-done">Complete</span>
-              <span class="badge badge-amber">Published · TACCESS 2025</span>
-            </div>
-            <h2 class="project-title">PRISMA Literature Review on Assistive Technologies with Adults with Down Syndrome</h2>
-            <p class="project-desc"><span class="lang-academic">A systematic scoping review of 20 papers, identifying gaps in accessible technology research for adults with DS and informing future design directions.</span><span class="lang-simple">A structured review of 20 published research papers to understand what technology tools have been built for adults with Down syndrome and where there's still important work to do.</span></p>
-            <span class="project-cta" aria-hidden="true">View project →</span>
-          </div>
-        </a>
-
-        <a href="projects/exploratory-study.html" class="project-card reveal" role="listitem"
-           aria-label="Exploratory Technology Study with Adults with Down Syndrome">
-          <div class="project-img-wrap">
-            <img src="images/TeaserFig.png"
-                 alt="Teaser figure from exploratory technology study" />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-hidden="true">
-              <span class="badge badge-done">Complete</span>
-              <span class="badge badge-amber">Published · CHI 2024</span>
-            </div>
-            <h2 class="project-title">Exploratory Technology Study with Adults with Down Syndrome</h2>
-            <p class="project-desc"><span class="lang-academic">Qualitative interviews with adults with DS, their parents, and domain experts to understand current technology use and identify unmet needs.</span><span class="lang-simple">In-depth conversations with adults with Down syndrome, their families, and specialists to learn how they use technology today and what tools would actually help them.</span></p>
-            <span class="project-cta" aria-hidden="true">View project →</span>
-          </div>
-        </a>
-
-        <a href="projects/tbi-ca.html" class="project-card reveal" role="listitem"
-           aria-label="Conversational Agents for people with TBI">
-          <div class="project-img-wrap">
-            <img src="images/TBI-CA_Teaser.png"
-                 alt="Teaser figure from conversational agents TBI study" />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-hidden="true">
-              <span class="badge badge-done">Complete</span>
-              <span class="badge badge-amber">Published · ASSETS 2023</span>
-            </div>
-            <h2 class="project-title">Conversational Agents for People with Traumatic Brain Injury (TBI)</h2>
-            <p class="project-desc"><span class="lang-academic">A four-week at-home study giving nine adults with TBI a conversational agent, investigating daily use patterns, challenges, and design requirements.</span><span class="lang-simple">A four-week study where nine adults with brain injuries used a voice assistant at home, so we could learn how they used it, what was difficult, and what would make it better.</span></p>
-            <span class="project-cta" aria-hidden="true">View project →</span>
-          </div>
-        </a>
-
-        <a href="projects/smart-tbi.html" class="project-card reveal" role="listitem"
-           aria-label="SMART-TBI: Social Media Accessibility and Rehabilitation Toolkit">
-          <div class="project-img-wrap">
-            <img src="images/smarttbi.png"
-                 alt="person looking at a computer with 5 social media aids around the screen to choose." />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-hidden="true">
-              <span class="badge badge-done">Complete</span>
-              <span class="badge badge-amber">Published · ASSETS 2024</span>
-            </div>
-            <h2 class="project-title">SMART-TBI: Design and Evaluation of the Social Media Accessibility and Rehabilitation Toolkit for Users with TBI</h2>
-            <p class="project-desc"><span class="lang-academic">Design and evaluation of a toolkit supporting accessible and rehabilitative social media use for adults with traumatic brain injury.</span><span class="lang-simple">Building and testing a set of tools to help adults with brain injuries use social media more safely and effectively as part of their recovery.</span></p>
-            <span class="project-cta" aria-hidden="true">View project →</span>
-          </div>
-        </a>
-
-        <a href="projects/tbi-social-media.html" class="project-card reveal" role="listitem"
-           aria-label="Supporting individuals with TBI through digital aids for social media">
-          <div class="project-img-placeholder" aria-hidden="true">Image coming soon</div>
-          <div class="project-body">
-            <div class="project-tags" aria-hidden="true">
-              <span class="badge badge-done">Complete</span>
-              <span class="badge badge-green">Under Review</span>
-            </div>
-            <h2 class="project-title">Supporting Individuals with TBI Through the Use of Digital Aids for Social Media: An In-the-Wild Study</h2>
-            <p class="project-desc"><span class="lang-academic">An in-the-wild study examining how adults with traumatic brain injury use digital aids to navigate social media platforms in everyday life.</span><span class="lang-simple">A real-world study following adults with brain injuries as they used digital tools to navigate social media in their everyday lives.</span></p>
-            <span class="project-cta" aria-hidden="true">View project →</span>
-          </div>
-        </a>
-
-      </div>
+      </section>
 
     </div>
   </main>
