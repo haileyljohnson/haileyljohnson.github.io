@@ -465,6 +465,21 @@ h2.section-title {
   display: block;
 }
 
+.gallery-hero {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--green-pale);
+  box-shadow: var(--shadow-sm);
+  margin: 0;
+}
+
+.gallery-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .gallery-caption {
   font-family: var(--font-mono);
   font-size: 0.63rem;

@@ -127,6 +127,10 @@
       color: var(--text-mid);
     }
 
+    .study-body.no-flyer { grid-template-columns: 1fr; }
+    .study-body.no-flyer .study-desc,
+    .study-body.no-flyer .study-actions { grid-column: 1; }
+
     /* ── ETHICS NOTE ── */
     .ethics-note {
       margin-top: 3rem;
@@ -192,8 +196,50 @@
         <h2 id="studies-heading" class="visually-hidden">Current and Past Studies</h2>
         <div class="studies-list">
 
-          <!-- STUDY 1: Active -->
-          <article class="study-card reveal" aria-labelledby="study1-title">
+          <!-- STUDY: Now Recruiting — AI Assistant Security/Privacy -->
+          <article class="study-card reveal" aria-labelledby="study-ai-title">
+            <div class="study-card-header">
+              <h3 id="study-ai-title" class="study-title">Security and Privacy Notifications with Smartphone AI-Assistants Study</h3>
+              <div class="study-status-wrap">
+                <span class="badge badge-active">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  Now Recruiting
+                </span>
+              </div>
+            </div>
+            <div class="study-body no-flyer">
+              <div class="study-desc">
+                <p><span class="lang-academic">We are recruiting adults with IDD to test a smartphone app designed to explain security and privacy notifications in plain language. In a single study session, participants encounter common phone warnings, such as permission pop-ups, spam alerts, and login prompts, and use the app to understand and respond to them.</span><span class="lang-simple">We built a phone app that explains security and privacy warnings in simple words. We are looking for adults with intellectual or developmental disabilities to try the app during a study session and tell us what helped and what was still confusing.</span></p>
+              </div>
+              <div class="study-actions">
+                <span class="badge badge-amber">Flyer &amp; Sign-Up Coming Soon</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- STUDY: Now Recruiting — Social Robot Occupational Support -->
+          <article class="study-card reveal" aria-labelledby="study-robot-title">
+            <div class="study-card-header">
+              <h3 id="study-robot-title" class="study-title">Social Robot Occupational Support Study</h3>
+              <div class="study-status-wrap">
+                <span class="badge badge-active">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  Now Recruiting
+                </span>
+              </div>
+            </div>
+            <div class="study-body no-flyer">
+              <div class="study-desc">
+                <p><span class="lang-academic">We are recruiting adults with IDD to work alongside a small tabletop robot (Reachy Mini) during two lab-simulated job tasks. The robot acts as a job-coach-like assistant, offering step-by-step guidance when needed and stepping back when not, and participants share their reactions in a short interview before and after the tasks. Support persons are welcome to attend.</span><span class="lang-simple">We are looking for adults with intellectual or developmental disabilities to try out a small friendly robot during two work-like tasks. The robot gives help when you need it and stays quiet when you don't. You'll also have a short chat before and after about what worked and what you'd want to change. You can bring someone you trust.</span></p>
+              </div>
+              <div class="study-actions">
+                <span class="badge badge-amber">Flyer &amp; Sign-Up Coming Soon</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- STUDY 1: Complete -->
+          <article class="study-card complete reveal" aria-labelledby="study1-title">
             <div class="study-card-header">
               <h3 id="study1-title" class="study-title">Security and Privacy Notification Exploratory Study</h3>
               <div class="study-status-wrap">
@@ -206,8 +252,7 @@
             </div>
             <div class="study-body">
               <div class="study-desc">
-                <p><span class="lang-academic">We are currently recruiting participants for a study exploring how adults with Intellectual and Developmental Disabilities (IDD) encounter and navigate security and privacy notifications on computers and smartphones.</span><span class="lang-simple">We're looking for people to join a study about security and privacy warnings. These are the pop-up messages on computers and phones about passwords, updates, and privacy settings.</span></p>
-                <p><span class="lang-academic">We want to understand what makes these notifications confusing or inaccessible, and ultimately design better alternatives that work for everyone.</span><span class="lang-simple">We want to learn what makes these messages hard to understand, and use that to design clearer, easier versions that work for everyone.</span></p>
+                <p><span class="lang-academic">This study explored how adults with Intellectual and Developmental Disabilities (IDD) encounter and navigate security and privacy notifications on computers and smartphones. Through a user study with seven adults with IDD, we identified three factors shaping understanding and decision-making. Recruitment for this study is now closed.</span><span class="lang-simple">This study looked at how adults with intellectual or developmental disabilities understand and respond to security and privacy pop-ups and warnings on phones and computers. Seven adults took part. We found three key things that shape how people make decisions about these warnings. This study is no longer recruiting.</span></p>
               </div>
               <a href="recruit/S_P_Flyer.pdf"
                  class="study-flyer"
