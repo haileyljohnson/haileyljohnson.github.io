@@ -11,3 +11,6 @@ Gemfile.lock
 node_modules
 package-lock.json
 images/.DS_Store
+.DS_Store
+cv/.DS_Store
+*/.DS_Store
